@@ -1,0 +1,6 @@
+<div class="post">
+  <h2>research</h2>
+  {% for item in site.research %}
+  <p>{{ item.content | markdownify }}</p>
+  {% endfor %}
+</div>
