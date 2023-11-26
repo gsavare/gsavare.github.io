@@ -169,6 +169,11 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
+  ciao:
+    defaults:
+      layout: post
+    output: true
+    permalink: /ciao/:path/
   projects:
     output: true
     permalink: /projects/:path/
@@ -176,10 +181,9 @@ collections:
     output: true
     permalink: /research/:path/
 
-
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
+  scrollable: true # adds a vertical scroll bar if there are more than 3 news   items
   limit: 5 # leave blank to include all the news in the `_news` folder
 
 latest_posts:

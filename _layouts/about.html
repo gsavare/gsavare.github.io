@@ -53,6 +53,11 @@ layout: default
             {%- include news.html limit=true %}
           {%- endif %}
 
+          {% if site.ciao != blank and site.announcements.enabled -%}
+            <h2><a href="{{ '/ciao/' | relative_url }}" style="color: inherit;">activities</a></h2>
+            {%- include ciao.html limit=true %}
+          {%- endif %}
+
           <!-- Latest posts -->
           {% if page.latest_posts -%}
             <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit;">latest posts</a></h2>
