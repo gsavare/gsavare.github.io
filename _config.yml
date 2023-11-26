@@ -169,11 +169,11 @@ collections:
       layout: post
     output: true
     permalink: /news/:path/
-  ciao:
+  activity:
     defaults:
       layout: post
     output: true
-    permalink: /ciao/:path/
+    permalink: /activity/:path/
   projects:
     output: true
     permalink: /projects/:path/

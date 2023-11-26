@@ -1,16 +1,16 @@
 
 <div class="news">
-  {% if site.ciao != blank -%}
-    {%- assign ciao_size = site.ciao | size -%}
-    <div class="table-responsive" {% if include.limit and site.announcements.scrollable and ciao_size > 3 %}style="max-height: 60vw"{% endif %}>
+  {% if site.activity != blank -%}
+    {%- assign activity_size = site.activity | size -%}
+    <div class="table-responsive" {% if include.limit and site.announcements.scrollable and activity_size > 3 %}style="max-height: 60vw"{% endif %}>
     <table class="table table-sm table-borderless">
-    {%- assign ciao = site.ciao | reverse -%}
+    {%- assign activity = site.activity | reverse -%}
     {% if include.limit and site.announcements.limit %}
-      {% assign ciao_limit = site.announcements.limit %}
+      {% assign activity_limit = site.announcements.limit %}
     {% else %}
-      {% assign ciao_limit = ciao_size %}
+      {% assign activity_limit = activity_size %}
     {% endif %}
-    {% for item in ciao limit: ciao_limit %}
+    {% for item in activity limit: activity_limit %}
         <tr>
         <th scope="row">-<!--{{ item.date | date: "%b %-d, %Y" }}--></th>
         <td>
