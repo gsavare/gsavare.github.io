@@ -1,5 +1,6 @@
 ---
 layout: page
+permalink: /pages/magenes2023/
 title:  The legacy of Enrico Magenes
 # date: 2023-04-24 21:01:00
 description: Pavia, November 22, 2023 - Aula Volta
