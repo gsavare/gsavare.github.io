@@ -180,6 +180,14 @@
 - title: Organization of scientific meetings
   type: time_table
   contents:
+    - title: Variational Analysis, Models and Methods in Measure Spaces
+      description: CIRM, Marseille (Co-organizers&#58; B. Bonnet-Weill, M. Fornasier, H. Frankowska)
+      year: 2024
+
+    - title: Mathematics for Artificial Intelligence and Machine Learning
+      description: Bocconi University, Milano (Co-organizers&#58; B. Morini, E. De Vito, S. Pieraccini)
+      year: 2024
+
     - title: Workshop on Variational and geometric structures for evolution
       description: CIRM, Trento (Co-organizers&#58; D. Knees, R. Rossi, M. Thomas)
       year: 2023
@@ -228,6 +236,12 @@
 - title: Invited presentations to conferences (selection)
   type: list
   contents:
+    – ICMS Workshop&#58; Optimal Transport and the Calculus of Variations, Edimburgh, 2023<br>
+    – Workshop&#58; The Mathematics of Subjective Probability, Milano, 2023<br>
+    – Workshop&#58; Calculus of Variations and Geometric Measure Theory, Pisa, 2023<br>
+    – BIRS Workshop&#58; Nonlinear Diffusion and nonlocal Interaction Models - Entropies, Complexity, and Multi-Scale Structures, Granada, 2023<br>
+    – Workshop&#58; Frontiers of Numerical PDEs, Maryland, 2023<br>
+    – Workshop&#58; Interpolation of Measures, Paris, 2023<br>
     – MFO workshop&#58; Heat Kernels, Stochastic Processes and Functional Inequalities, Oberwolfach, 2022<br>
     – HCM Conference&#58; From Dirichlet Forms to Wasserstein Geometry, Bonn, 2022<br>
     – Workshop Geometric Measure Theory and applications, Cortona, 2021<br>
@@ -256,7 +270,7 @@
     – Wokshop on Particle systems, nonlinear diffusions, and equilibration, HCM, Bonn, 2007.<br>
     – Workshop on Optimal Transportation, and Applications to Geophysics and Geometry, Edinburgh, 2007.<br>
     – Workshop on Optimal transport&#58; theory and application, Centro De Giorgi, Pisa, 2006.<br>
-    – ICMS Workshop&#58; OptimalTransportation,Transport Equations and Hydrodynamics, Edinburgh,2005.<br>
+    – ICMS Workshop&#58; OptimalTransportation, Transport Equations and Hydrodynamics, Edinburgh,2005.<br>
     – 10th Conference on Free Boundary Problems, Coimbra, June 7-12, 2005. Plenary speaker
 
 
