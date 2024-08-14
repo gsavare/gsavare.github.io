@@ -112,7 +112,7 @@ contact_note: #
 google_analytics:  # your Google Analytics measurement ID (format: G-XXXXXXXXXX)
 cronitor_analytics:  # cronitor RUM analytics site ID (format: XXXXXXXXX)
 
-google_site_verification:  # your google-site-verification ID (Google Search Console)
+google_site_verification: JlADdme2xqVf7lQHhCW9q_R6Io7-4PHv57v-EoD4mN4 # your google-site-verification ID (Google Search Console)
 bing_site_verification:  # out your bing-site-verification ID (Bing Webmaster)
 
 # -----------------------------------------------------------------------------
