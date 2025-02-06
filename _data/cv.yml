@@ -168,6 +168,7 @@
 - title: Postoctoral fellows
   type: list
   contents:
+    current&#58; Filippo Riva<br>
     2021-2023&#58; Luca Tamanini<br>
     2017-2019&#58; Giulia Cavagnari<br>
     2016-2017&#58; Dario Mazzoleni<br>
@@ -180,6 +181,10 @@
 - title: Organization of scientific meetings
   type: time_table
   contents:
+    - title: Workshops on Optimal Transportation and Applications,
+      description: Pisa (Co-organizers&#58; L. Ambrosio, G. Buttazzo, N. Gigli)
+      year: 2024, 2022, ..., 2008
+
     - title: Variational Analysis, Models and Methods in Measure Spaces
       description: CIRM, Marseille (Co-organizers&#58; B. Bonnet-Weill, M. Fornasier, H. Frankowska)
       year: 2024
@@ -195,10 +200,6 @@
     - title: Workshop on Workshop on Optimal Transport, Mean-Field Models, and Machine Learning,
       description: IAS-TUM, Munich (Co-organizers&#58; M. Burger, M. Fornasier, G. Peyré)
       year: 2023
-
-    - title: Workshops on Optimal Transportation and Applications,
-      description: Pisa (Co-organizers&#58; L. Ambrosio, G. Buttazzo, N. Gigli)
-      year: 2022, 2018, ..., 2008
 
     - title: Contemporary Trends in Kinetic Theory and PDEs
       description: Pavia (Co-organizers&#58; J.A. Carrillo, A. Pulvirenti, M. Zanella)
@@ -236,6 +237,9 @@
 - title: Invited presentations to conferences (selection)
   type: list
   contents:
+    – MFO Workshop&#58; Applications of Optimal Transportation, Oberwolfach, 2024<br>
+    – RISM Congress&#58; PDEs and Continuum Mechanics, Varese, 2024<br>
+    – CIRM Workshop&#58; Aggregation-Diﬀusion Equations and Collective Behavior. Analysis, Numerics and Applications, CIRM, Marseille, 2024<br>
     – ICMS Workshop&#58; Optimal Transport and the Calculus of Variations, Edimburgh, 2023<br>
     – Workshop&#58; The Mathematics of Subjective Probability, Milano, 2023<br>
     – Workshop&#58; Calculus of Variations and Geometric Measure Theory, Pisa, 2023<br>
