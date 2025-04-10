@@ -5,7 +5,9 @@ permalink: /
 subtitle: >
   Professor of Mathematical Analysis <br>
   <a href="https://dec.unibocconi.eu">Department of Decision Sciences, Bocconi University</a><br>
-  Via Roentgen 1. 20136, Milano, Italy
+  Via Roentgen 1. 20136, Milano, Italy<br>
+  <br>
+  <a href="https://www.math-ub.it">Analysis and Applied Mathematics research group at Bocconi University</a>
 
 profile:
   align: right
