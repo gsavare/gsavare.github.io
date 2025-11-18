@@ -1,0 +1,18 @@
+/* tighter rows for the Activity include only */
+.activity-compact td,
+.activity-compact th {
+  padding-top: 0.12rem !important;  /* tweak to taste: 0.08–0.18rem */
+  padding-bottom: 0.12rem !important;
+  line-height: 1.2;
+}
+
+.activity-compact p {
+  margin: 0;  /* eliminate paragraph gap inside cells */
+}
+
+/* optional: narrower dash column */
+.activity-compact th[scope="row"] {
+  width: 0.75rem;
+  white-space: nowrap;
+  padding-right: 0.4rem !important;
+}

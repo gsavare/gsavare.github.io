@@ -3,7 +3,19 @@
   {% if site.activity != blank -%}
     {%- assign activity_size = site.activity | size -%}
     <div class="table-responsive" {% if include.limit and site.announcements.scrollable and activity_size > 3 %}style="max-height: 60vw"{% endif %}>
-    <table class="table table-sm table-borderless">
+
+       <style>
+    /* very specific + !important to beat Bootstrap */
+    table.table.activity-compact > tbody > tr > th,
+    table.table.activity-compact > tbody > tr > td {
+      padding-top: 0.18rem !important;
+      padding-bottom: 0.18rem !important;
+      line-height: 1.2;
+    }
+    table.table.activity-compact p { margin: 0; }
+  </style>
+
+    <table class="table table-sm table-borderless activity-compact">
     {%- assign activity = site.activity | reverse -%}
     {% if include.limit and site.announcements.limit %}
       {% assign activity_limit = site.announcements.limit %}
@@ -25,6 +37,5 @@
     </table>
     </div>
   {%- else -%}
-    <p>ququ</p>
   {%- endif %}
 </div>

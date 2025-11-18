@@ -1038,7 +1038,10 @@ nav[data-toggle="toc"] {
 .my-icon {
   font-stretch: extra-condensed;
   color: var(--global-text-color);
-  hover: black;
+  
+  &:hover {
+    color: black;
+  }
 }
 
 .my-list {
