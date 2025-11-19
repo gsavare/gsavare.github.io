@@ -10,7 +10,8 @@ nav: true
   <div style="flex:1; min-width:200px; margin-top:0;">
     <h1 style="margin:0; font-weight:normal;">OPTiMiSE</h1>
     <h2 style="margin:0 0 0.3rem 0;">Optimal Transport and Metric Structures for Evolution Problems</h2>
-    <span style="font-size:1rem;">AdG Project 101200514 - Start date: 1 January, 2026. Duration: 5 years</span>
+    <span style="font-size:1rem;">AdG  
+    <a href="https://doi.org/10.3030/101200514">Project 101200514</a> - Start date: 1 January, 2026. Duration: 5 years</span>
   </div>
 
   <div style="min-width:250px;">
