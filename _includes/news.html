@@ -1,8 +1,20 @@
-<div class="news">
+<div class="news" style="margin-bottom: 1.5rem;">
   {% if site.news != blank -%}
     {%- assign news_size = site.news | size -%}
     <div class="table-responsive" {% if include.limit and site.announcements.scrollable and news_size > 3 %}style="max-height: 60vw"{% endif %}>
-    <table class="table table-sm table-borderless">
+
+       <style>
+    /* very specific + !important to beat Bootstrap */
+    table.table.news-compact > tbody > tr > th,
+    table.table.news-compact > tbody > tr > td {
+      padding-top: 0.18rem !important;
+      padding-bottom: 0.18rem !important;
+      line-height: 1.2;
+    }
+    table.table.news-compact p { margin: 0; }
+  </style>
+
+    <table class="table table-sm table-borderless news-compact" style="margin-bottom: 0; line-height: 1.2;">
     {%- assign news = site.news | reverse -%}
     {% if include.limit and site.announcements.limit %}
       {% assign news_limit = site.announcements.limit %}

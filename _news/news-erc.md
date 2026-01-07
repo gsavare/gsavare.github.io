@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-The [ERC project OPTiMiSE](/erc/), *Optimal Transport and Metric Structures for Evolution Problems,* will start on **January 1, 2026**<br>
+The [ERC project OPTiMiSE](/erc/), *Optimal Transport and Metric Structures for Evolution Problems,* has started on **January 1, 2026**<br>
