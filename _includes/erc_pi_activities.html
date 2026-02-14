@@ -1,0 +1,25 @@
+{% assign activities = site.data.erc_pi_activities %}
+{% if activities == nil or activities.size == 0 %}
+<p><em>Activity list coming soon.</em></p>
+{% else %}
+{% assign sorted = activities | sort: "date" | reverse %}
+{% assign grouped = sorted | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+{% for year_group in grouped %}
+<h3>{{ year_group.name }}</h3>
+<table class="table table-sm">
+  <thead><tr><th>Date</th><th>Type</th><th>Event</th><th>Location</th><th>Role</th></tr></thead>
+  <tbody>
+  {% for a in year_group.items %}
+  <tr>
+    <td>{{ a.date | date: "%b %-d" }}</td>
+    <td>{{ a.type }}</td>
+    <td>{{ a.title }}{% if a.talk_title %}<br><em>{{ a.talk_title }}</em>{% endif %}</td>
+    <td>{{ a.location }}</td>
+    <td>{{ a.role }}</td>
+  </tr>
+  {% endfor %}
+  </tbody>
+</table>
+{% endfor %}
+{% endif %}

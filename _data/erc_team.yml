@@ -1,0 +1,66 @@
+# ERC OPTiMiSE — Team & Collaborators
+#
+# Categories:
+#   pi       — Principal Investigator
+#   initial  — Collaborators declared from the start of the project
+#   added    — Collaborators added over time
+#   hired    — People hired with project funds (postdocs, PhD students)
+#
+# Fields:
+#   name, role, category, institution, url, start_date, end_date, visits
+
+- name: "Benoît Bonnet Weill"
+  category: initial
+  url: "https://factoriellepi.github.io/Page-perso-Bonnet_Weill/"
+
+- name: "Giulia Cavagnari"
+  category: initial
+  url: "https://sites.google.com/view/giulia-cavagnari"
+
+- name: "Franca Hoffmann"
+  category: initial
+  url: "https://francahoffmann.com"
+
+- name: "Hugo Lavenant"
+  category: initial
+  url: "https://hugolav.github.io"
+
+- name: "Daniel Matthes"
+  category: initial
+  url: "https://www.professoren.tum.de/en/matthes-daniel"
+
+- name: "Alexander Mielke"
+  category: initial
+  url: "https://www.wias-berlin.de/people/mielke/"
+
+- name: "Matteo Muratori"
+  category: initial
+  url: "https://sites.google.com/view/matteomuratori"
+
+- name: "Mark Peletier"
+  category: initial
+  url: "https://www.tue.nl/en/research/researchers/mark-peletier"
+
+- name: "Alessandro Pinzi"
+  category: initial
+  url: "https://alessandropinzi.github.io"
+
+- name: "Alessio Porretta"
+  category: initial
+  url: "https://www.mat.uniroma2.it/~porretta/"
+
+- name: "Filippo Riva"
+  category: initial
+  url: "https://sites.google.com/view/filipporiva"
+
+- name: "Riccarda Rossi"
+  category: initial
+  url: "https://riccarda-rossi.unibs.it"
+
+- name: "André Schlichting"
+  category: initial
+  url: "https://andre-schlichting.de"
+
+- name: "Giacomo Sodini"
+  category: initial
+  url: "https://giacomosodini.github.io"

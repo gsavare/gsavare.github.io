@@ -19,6 +19,11 @@ strong {
   color: var(--global-text-color);
 }
 
+a strong,
+a b {
+  color: inherit;
+}
+
 hr {
   border-top: 1px solid var(--global-divider-color);
 }
@@ -171,6 +176,14 @@ blockquote {
   border-bottom: 1px solid var(--global-divider-color);
   background-color: var(--global-bg-color);
   opacity: 0.95;
+}
+
+// Open dropdown on hover (allows click to navigate)
+@media (min-width: 576px) {
+  .navbar .nav-item.dropdown:hover > .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
 }
 
 .navbar .dropdown-menu {

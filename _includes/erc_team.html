@@ -1,0 +1,31 @@
+{% assign team = site.data.erc_team %}
+{% if team == nil or team.size == 0 %}
+<p><em>Team information coming soon.</em></p>
+{% else %}
+{% assign categories = "pi,initial,added,hired" | split: "," %}
+{% assign cat_labels = "Principal Investigator,Collaborators,Collaborators,Hired Personnel" | split: "," %}
+
+{% for cat in categories %}
+  {% assign members = team | where: "category", cat %}
+  {% if members.size > 0 %}
+  <h3>{{ cat_labels[forloop.index0] }}</h3>
+  <ul>
+  {% for person in members %}
+    <li>
+      {% if person.url %}<a href="{{ person.url }}">{{ person.name }}</a>{% else %}{{ person.name }}{% endif %}
+      {% if person.institution %}({{ person.institution }}){% endif %}
+      {% if person.role %} — {{ person.role }}{% endif %}
+      {% if person.start_date %}<br><small>{{ person.start_date | date: "%b %Y" }}–{% if person.end_date %}{{ person.end_date | date: "%b %Y" }}{% else %}present{% endif %}</small>{% endif %}
+      {% if person.visits %}
+        <ul>
+        {% for v in person.visits %}
+          <li><small>Visit: {{ v.start | date: "%b %-d" }}–{{ v.end | date: "%b %-d, %Y" }}{% if v.note %} — {{ v.note }}{% endif %}</small></li>
+        {% endfor %}
+        </ul>
+      {% endif %}
+    </li>
+  {% endfor %}
+  </ul>
+  {% endif %}
+{% endfor %}
+{% endif %}

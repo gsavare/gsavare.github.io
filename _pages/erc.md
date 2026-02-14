@@ -4,6 +4,16 @@ main_title: # OPTiMiSE
 title: erc project
 permalink: /erc/
 nav: true
+dropdown: true
+children:
+    - title: positions
+      permalink: /erc/positions/
+    - title: team
+      permalink: /erc/team/
+    - title: activities
+      permalink: /erc/activities/
+    - title: publications
+      permalink: /erc/publications/
 ---
 <div style="display:flex; justify-content:space-between; align-items:flex-start; flex-wrap:wrap; margin-bottom:1.5rem;">
 
@@ -32,42 +42,23 @@ The goal of the project is a wide-ranging analysis which aims to combine and bro
 - the foundation of a *mean-field theory for the rate--independent evolution of critical points*.
 
 
-{% comment %}
-Link: <a href="{{ '/erc/description/' | relative_url }}">overview del progetto</a>.
+## [positions]({{ '/erc/positions/' | relative_url }})
 
-## People
-Link: <a href="{{ '/erc/people/' | relative_url }}">team</a>.
+{% include erc_positions.html %}
 
-## Activities
+## [team & collaborators]({{ '/erc/team/' | relative_url }})
+
+## [activities]({{ '/erc/activities/' | relative_url }})
+
 <ul>
-{% assign acts = site.erc | where_exp:'p','p.path contains "/activities/"' | sort: "date" | reverse %}
+{% assign acts = site.erc | where: "category", "activities" | sort: "date" | reverse %}
 {% for p in acts %}
-  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>{% if p.date %} — {{ p.date | date: "%d %b %Y" }}{% endif %}</li>
+  <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> — {% if p.event_date %}{{ p.event_date }}{% else %}{{ p.date | date: "%B %Y" }}{% endif %}{% if p.location %}, {{ p.location }}{% endif %}</li>
 {% endfor %}
 </ul>
 
-## Talks / Interventions
-<ul>
-{% assign tks = site.erc | where_exp:'p','p.path contains "/talks/"' | sort: "date" | reverse %}
-{% for p in tks %}
-  <li>
-    <a href="{{ p.url | relative_url }}">{{ p.title }}</a>
-    {% if p.slides %}[<a href="{{ p.slides | relative_url }}">slides</a>]{% endif %}
-    {% if p.date %} — {{ p.date | date: "%d %b %Y" }}{% endif %}
-  </li>
-{% endfor %}
-</ul>
+## [publications]({{ '/erc/publications/' | relative_url }})
 
-## Results & Publications
-- <a href="{{ '/erc/results/' | relative_url }}">risultati</a> (dataset, software, materiali)  
-- <a href="{{ '/erc/publications/' | relative_url }}">pubblicazioni</a>
-
-Start date: 1 January, 2026<br>
-End date: 31 December, 2030<br>
-Duration: 60 monts
-
-
-{% endcomment %}
 <hr style="margin-top:2rem;">
 
 <p style="font-size:0.8rem; color:gray;">

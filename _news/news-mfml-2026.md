@@ -6,5 +6,5 @@ inline: true
 related_posts: true
 ---
 
-Intensive school [Mathematical Foundations of Machine Learning (MFML 2026)](https://sites.google.com/unitn.it/mfml-2026/home), May 25-29, Vason (Monte Bondone), Trento<br>
+Intensive school [Mathematical Foundations of Machine Learning (MFML 2026)](/erc/activities/MFML2026/), May 25-29, Vason (Monte Bondone), Trento<br>
 

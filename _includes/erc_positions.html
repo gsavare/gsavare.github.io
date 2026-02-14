@@ -1,0 +1,32 @@
+{% assign positions = site.erc | where: "category", "positions" | sort: "deadline" %}
+{% assign open = positions | where: "status", "open" %}
+{% assign closed = positions | where: "status", "closed" %}
+
+{% if open.size > 0 %}
+<ul>
+{% for pos in open %}
+  <li>
+    <strong>(open)</strong>
+    <strong><a href="{{ pos.url | relative_url }}">{{ pos.title }}</a></strong>
+    ({{ pos.position_type }}, {{ pos.duration }})
+    — Deadline: <strong>{{ pos.deadline | date: "%B %-d, %Y" }}</strong>
+  </li>
+{% endfor %}
+</ul>
+{% else %}
+<p><em>No open positions at the moment. Check back later.</em></p>
+{% endif %}
+
+{% if closed.size > 0 %}
+<details>
+<summary>Past positions</summary>
+<ul>
+{% for pos in closed %}
+  <li>
+    <a href="{{ pos.url | relative_url }}">{{ pos.title }}</a>
+    ({{ pos.position_type }}) — closed {{ pos.deadline | date: "%B %Y" }}
+  </li>
+{% endfor %}
+</ul>
+</details>
+{% endif %}

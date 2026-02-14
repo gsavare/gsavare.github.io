@@ -1,0 +1,27 @@
+# ERC OPTiMiSE — PI Activities & Funded Travel
+#
+# Track conferences, visits, invitations, and other activities
+# funded by the ERC project.
+#
+# Fields:
+#   date:        Date of the activity (YYYY-MM-DD, required)
+#   type:        conference | visit | invitation | school | workshop
+#   title:       Name of the event or visit (required)
+#   location:    City, Country
+#   role:        invited speaker | participant | organizer | visitor
+#   talk_title:  Title of talk (if applicable)
+#   slides_url:  URL to slides (if applicable)
+#   host:        Host person/institution (for visits)
+#   funded:      true/false — whether ERC-funded
+#
+# Example:
+# - date: 2026-06-15
+#   type: conference
+#   title: "Some Conference 2026"
+#   location: "City, Country"
+#   role: "Invited speaker"
+#   talk_title: "Title of talk"
+#   funded: true
+
+# Add entries below this line:
+[]
