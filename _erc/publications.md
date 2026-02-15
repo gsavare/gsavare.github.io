@@ -5,7 +5,7 @@ permalink: /erc/publications/
 toc: false
 ---
 
-Publications funded by or acknowledging the ERC Advanced Grant OPTiMiSE ([Project 101200514](https://doi.org/10.3030/101200514)).
+Publications funded by or acknowledging the [ERC project  OPTiMiSE](/erc/).
 
 <!-- To include a publication here, add  keywords = {erc-optimise}  to its BibTeX entry in _bibliography/papers.bib -->
 

@@ -11,26 +11,19 @@
       value: 0000-0002-0104-4158
     - name: MathSciNet
       value: 336952
+    - name: ResearcherID
+      value: H-3651-2014
+    - name: Scopus
+      value: 6602154611
+    - name: Google Scholar
+      value: w7qH1YYAAAAJ
 
 - title: Education
   type: time_table
   contents:
     - title: Laurea (cum laude) in Mathematics
       institution: University of Pavia, Italy
-      year: 1988
-      # description:
-      #  - Description 1.
-      #  - Description 2.
-      #  - title: Description 3.
-      #    contents:
-      #      - Sub-description 1.
-      #      - Sub-description 2.
-    # - title: Federal teaching diploma
-    #  institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-    #  year: 1900
-    #  description:
-    #    - Description 1.
-    #    - Description 2.
+      year: 1984 - 1988
 
 - title: Professional experience
   type: time_table
@@ -44,24 +37,22 @@
       year: 2000 - 2020
 
     - title: Associate Professor, Mathematical Analysis.
-      institution: Department of Mathematics, University of Pavia
+      institution: University of Pavia
       year: 1998 - 2000
 
     - title: Researcher
-      institution: Iinstitute of Mathematical Analysis and Information Technologies (IMATI), CNR, Pavia
+      institution: IMATI-CNR, Pavia
       year: 1990 - 1998
-
-
-# - title: Open Source Projects
-#   type: time_table
-#   contents:
-#     - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-#       year: 2015-now
-#       description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
 
 - title: Fellowships and Awards
   type: time_table
   contents:
+    - year: 2025
+      items:
+        - <em>ERC Advanced Grant</em>, awarded for the project <em>Optimal Transport and Metric Structures for Evolution Problems</em> (OPTiMiSE)
+    - year: 2025
+      items:
+        - Included in the <em>Highly Cited Researchers</em> list by Clarivate for the field of Mathematics
     - year: 2019 - 2023
       items:
         - <em>Hans Fischer senior fellow</em>, Institute for Advanced Study, Technical University of Munich
@@ -70,16 +61,16 @@
         - <em>Plenary Speaker</em>, XXI Congresso Unione Matematica Italiana
     - year: 2016
       items:
-        - <em>Invited Speaker</em>, 7th European Congress of Mathematics, Berlin, section “Analysis and PDEs”
+        - <em>Invited Speaker</em>, 7th European Congress of Mathematics, Berlin, section "Analysis and PDEs"
     - year: 2015
       items:
         - <em>John von Neumann Visiting Professor</em>, Technical University of Munich
     - year: 2014
       items:
-        - the results on Gradient Flows has been presented in the <em>Exposé Bourbaki 1065</em>, Flots de gradient dans les espaces métriques et leurs applications d’aprè Ambrosio-Gigli-Savaré, Asterisque 361.
+        - the results on Gradient Flows have been presented in the <em>Exposé Bourbaki 1065&#58; Flots de gradient dans les espaces métriques et leurs applications d'après Ambrosio-Gigli-Savaré</em>, Asterisque 361.
     - year: 2012
       items:
-        - The paper <em>Chemical reactions as Gamma-limit of diffusion</em> SIAM Rev. 54 (2012) (with M. Peletier, M. Veneroni) has been published as SIAM Review’s SIGEST award.
+        - The paper <em>Chemical reactions as Gamma-limit of diffusion</em> SIAM Rev. 54 (2012) (with M. Peletier, M. Veneroni) has been published as SIAM Review's SIGEST award.
     - year: 2011
       items:
         - <em>Ennio De Giorgi Prize</em>, awarded by the Italian Mathematical Union
@@ -87,7 +78,7 @@
       items:
         - <em>Gioachino Japichino Prize</em>, awarded by the Accademia Nazionale dei Lincei
 
-- title: Institutional responsabilities
+- title: Institutional responsibilities
   type: time_table
   contents:
     - title: Director of the Advanced School of Ph.D. Higher Education (SAFD)
@@ -98,21 +89,20 @@
       institution: University of Pavia
       year: 2014 - 2016
 
-    - title: Director of the Ph.D. program in Mathematics and Statistics.
+    - title: Director of the Ph.D. program in Mathematics and Statistics
       institution: University of Pavia
       year: 2001 - 2008
 
     - title: Research associate
-      institution: Iinstitute of Mathematical Analysis and Information Technologies (IMATI), CNR, Pavia
-      year: 1990 -
+      institution: IMATI-CNR, Pavia
+      year: 1998 -
 
-
-- title: Reviewing activity
+- title: Editorial and Advisory Boards
   type: time_table
   contents:
-    - title: ESAIM Control, Optimisation and Calculus of Variations
-      description: Member of the editorial board
-      year: 2023 - present
+    - title: ESAIM&#58; Control, Optimisation and Calculus of Variations
+      description: member of the editorial board
+      year: 2023 -
 
     - title: Unione Matematica Italiana
       description: member of the Scientific Advisory Board
@@ -130,74 +120,81 @@
       description: member of the editorial board
       year: 2013 -
 
+- title: Memberships of Scientific Societies
+  type: time_table
+  contents:
+    - title: Membro Corrispondente
+      institution: Istituto Lombardo, Accademia di Scienze e Lettere, Milano
+      year: 2009 -
 
 - title: Recent academic interests
   type: nested_list
   contents:
     - title: Foundation of the theory of metric&#45;measure spaces with Riemannian Ricci curvature bounded from below (the so-called RCD(K,&#8734;) condition)
-      # items:
-      #   - Description 1.
-      #   - Description 2.
     - title: Metric&#45;Sobolev spaces, identification of the construction by Lipschitz functions and Cheeger energy with the Newtonian approach
-      # items:
-      #   - Description 1.
-      #   - Description 2.
     - title: Entropy-Transport formulation for unbalanced optimal transport and the characterization of the new Hellinger&#45;Kantorovich distance
-
     - title: Foundation of Balanced Viscosity and Visco&#45;Energetic solutions to rate&#45;independent processes in infinite&#45;dimensional spaces
-
     - title: Dissipative evolutions of probability measures
-
     - title: The mean&#45;field formulation of spatially inhomogeneous Evolutionary Games
 
 - title: Supervision of graduate students
   type: list
   contents:
+    <em>Bocconi University</em>&#58;<br>
     current&#58; Alessandro Pinzi<br>
-    2022&#58; Giacomo Sodini (co-advised with M. Fornasier)<br>
-    2019&#58; Nicolò De Ponti<br>
+    <em>IAS-TUM, Munich</em>&#58;<br>
+    2022&#58; Giacomo Sodini (co-advised with M. Fornasier, now PostDoc, TU Wien)<br>
+    <em>University of Pavia</em>&#58;<br>
+    2019&#58; Nicolò De Ponti (now Tenure-Track Researcher, Politecnico di Milano)<br>
     2017&#58; Luca Minotti<br>
-    2015&#58; Giovanni Bonaschi (co-advised with M. Peletier, Eindhoven)<br>
-    2014&#58; Dario Mazzoleni (co-advised with A. Pratelli, Erlangen)<br>
+    2015&#58; Giovanni Bonaschi (co-advised with M. Peletier, Eindhoven; now Portfolio manager fondi Multi Asset)<br>
+    2014&#58; Dario Mazzoleni (co-advised with A. Pratelli, Erlangen; now Associate Professor, University of Pavia)<br>
     2011&#58; Luca Natile<br>
-    2007&#58; Marco Veneroni<br>
-    2006&#58; Stefano Lisini<br>
-    2005&#58; Riccarda Rossi<br>
-    1998&#58; Simona Sanfelici (co-advised with P. Colli Franzone)
+    2007&#58; Marco Veneroni (now Associate Professor, University of Pavia)<br>
+    2006&#58; Stefano Lisini (now Associate Professor, University of Pavia)<br>
+    2005&#58; Riccarda Rossi (now Associate Professor, University of Brescia)<br>
+    1998&#58; Simona Sanfelici (co-advised with P. Colli Franzone; now Full Professor, University of Parma)
 
-- title: Postoctoral fellows
+- title: Postdoctoral fellows
   type: list
   contents:
-    current&#58; Filippo Riva<br>
-    2021-2023&#58; Luca Tamanini<br>
-    2017-2019&#58; Giulia Cavagnari<br>
-    2016-2017&#58; Dario Mazzoleni<br>
-    2015-2016&#58; Carlo Orrieri, Matteo Muratori<br>
-    2009-2011&#58; Edoardo Mainini<br>
-    2007-2008&#58; Daniel Matthes<br>
-    2006-2008&#58; Antonio Marigonda
-
+    2024-2025&#58; Filippo Riva (now PostDoc, Charles University, Prague)<br>
+    2021-2023&#58; Luca Tamanini (now Assistant Professor, Università Cattolica del Sacro Cuore, Brescia)<br>
+    2017-2019&#58; Giulia Cavagnari (now Associate Professor, Politecnico di Milano)<br>
+    2016-2017&#58; Dario Mazzoleni (now Associate Professor, University of Pavia)<br>
+    2015-2016&#58; Carlo Orrieri (now Associate Professor, University of Pavia), Matteo Muratori (now Full Professor, Politecnico di Milano)<br>
+    2009-2011&#58; Edoardo Mainini (now Associate Professor, University of Genova)<br>
+    2007-2008&#58; Daniel Matthes (now Associate Professor, TUM)<br>
+    2006-2008&#58; Antonio Marigonda (now Full Professor, University of Verona)
 
 - title: Organization of scientific meetings
   type: time_table
   contents:
-    - title: Workshops on Optimal Transportation and Applications,
-      description: Pisa (Co-organizers&#58; L. Ambrosio, G. Buttazzo, N. Gigli)
-      year: 2024, 2022, ..., 2008
+    - title: Intensive school Mathematical Foundations of Machine Learning (MFML 2026)
+      description: Vason (Monte Bondone), Trento
+      year: 2026
 
-    - title: Variational Analysis, Models and Methods in Measure Spaces
-      description: CIRM, Marseille (Co-organizers&#58; B. Bonnet-Weill, M. Fornasier, H. Frankowska)
-      year: 2024
+    - title: International School Mathematical Analysis and Applications
+      description: Lake Como School of Advanced Studies, Villa del Grumello, Como (Co-organizer&#58; M.G. Mora)
+      year: 2025
+
+    - title: Workshop on Variational Methods and Non-Smooth Geometric Structures with Applications
+      description: Bocconi University, Milan
+      year: 2025
+
+    - title: Workshops on Optimal Transportation and Applications
+      description: Pisa (Co-organizers&#58; L. Ambrosio, G. Buttazzo, N. Gigli)
+      year: "2026, 2024, ..., 2008"
 
     - title: Mathematics for Artificial Intelligence and Machine Learning
-      description: Bocconi University, Milano (Co-organizers&#58; B. Morini, E. De Vito, S. Pieraccini)
+      description: Università Bocconi, Milano (Co-organizers&#58; B. Morini, E. De Vito, S. Pieraccini)
       year: 2024
 
     - title: Workshop on Variational and geometric structures for evolution
       description: CIRM, Trento (Co-organizers&#58; D. Knees, R. Rossi, M. Thomas)
       year: 2023
 
-    - title: Workshop on Workshop on Optimal Transport, Mean-Field Models, and Machine Learning,
+    - title: Workshop on Optimal Transport, Mean-Field Models, and Machine Learning
       description: IAS-TUM, Munich (Co-organizers&#58; M. Burger, M. Fornasier, G. Peyré)
       year: 2023
 
@@ -205,7 +202,7 @@
       description: Pavia (Co-organizers&#58; J.A. Carrillo, A. Pulvirenti, M. Zanella)
       year: 2022
 
-    - title: School on Optimal transport&#58; numerical methods and applications,
+    - title: School on Optimal transport&#58; numerical methods and applications
       description: Lake Como School of Advanced Studies (Co-organizer&#58; F. Santambrogio)
       year: 2018
 
@@ -225,7 +222,7 @@
       description: In memory of Enrico Magenes, Pavia
       year: 2011
 
-    - title: BIRS Workshop&#58; Rate-independent systems&#58; Modeling, Analysis, and Computations,
+    - title: BIRS Workshop&#58; Rate-independent systems&#58; Modeling, Analysis, and Computations
       description: Banff (Co-organizer&#58; U. Stefanelli)
       year: 2010
 
@@ -233,14 +230,12 @@
       description: Cetraro (Co-organizer&#58; L. Ambrosio)
       year: 2008
 
-
 - title: Invited presentations to conferences (selection)
   type: list
   contents:
+    – CIRM Workshop&#58; Aggregation-Diffusion Equations and Collective Behavior&#58; Analysis, Numerics and Applications, Marseille, 2024<br>
     – MFO Workshop&#58; Applications of Optimal Transportation, Oberwolfach, 2024<br>
-    – RISM Congress&#58; PDEs and Continuum Mechanics, Varese, 2024<br>
-    – CIRM Workshop&#58; Aggregation-Diﬀusion Equations and Collective Behavior. Analysis, Numerics and Applications, CIRM, Marseille, 2024<br>
-    – ICMS Workshop&#58; Optimal Transport and the Calculus of Variations, Edimburgh, 2023<br>
+    – ICMS Workshop&#58; Optimal Transport and the Calculus of Variations, Edinburgh, 2023<br>
     – Workshop&#58; The Mathematics of Subjective Probability, Milano, 2023<br>
     – Workshop&#58; Calculus of Variations and Geometric Measure Theory, Pisa, 2023<br>
     – BIRS Workshop&#58; Nonlinear Diffusion and nonlocal Interaction Models - Entropies, Complexity, and Multi-Scale Structures, Granada, 2023<br>
@@ -248,35 +243,36 @@
     – Workshop&#58; Interpolation of Measures, Paris, 2023<br>
     – MFO workshop&#58; Heat Kernels, Stochastic Processes and Functional Inequalities, Oberwolfach, 2022<br>
     – HCM Conference&#58; From Dirichlet Forms to Wasserstein Geometry, Bonn, 2022<br>
+    – Workshop on Frontiers in Nonlocal Nonlinear PDEs, Anacapri, 2022<br>
+    – Workshop 20 years of Summer Schools on CalcVar in Rome, Roma, 2022<br>
     – Workshop Geometric Measure Theory and applications, Cortona, 2021<br>
     – MFO workshop&#58; Applications of Optimal Transportation in the Natural Sciences (online), Oberwolfach, 2021<br>
-    – Workshop&#58; Calculus of Variations and Applications, SISSA, Trieste, 2020.<br>
+    – Workshop&#58; Calculus of Variations and Applications, SISSA, Trieste, 2020<br>
     – XXI Congresso Unione Matematica Italiana, 2019. Plenary Speaker<br>
-    – Workshop&#58; Optimal transport and Geometric Analysis, Venice, 2019.<br>
-    – ICMS Workshop&#58; Gradient flows&#58; challenges and new directions, Edinburgh, 2018.<br>
-    – BIRS workshop&#58; Topics in the Calculus of Variations&#58; Recent Advances and New Trends, Banff, 2018.<br>
-    – BIRS workshop&#58; Entropies, the Geometry of Nonlinear Flows, and their Applications, Banff, 2018.<br>
-    – MFO workshop&#58; Variational Methods for Evolution Oberwolfach, 2017<br>
-    – MFO workshop&#58; Applications of Optimal Transportation in the Natural Sciences Oberwolfach, 2017<br>
-    – 7TH European Congress of Mathematics, Berlin&#58; section “Analysis and PDEs”. Invited speaker.<br>
-    – MFO workshop&#58; Heat Kernels, Stochastic Processes, and Functional Inequalities, Oberwolfach, 2016.<br>
-    – Conference on New trends in Optimal Transport, HIM, Bonn, 2015.<br>
-    – BIRS workshop&#58; Entropy Methods, PDEs, Functional Inequalities, and Applications, Banff, 2014.<br>
-    – International Conference on Fractal Geometry and Stochastics V, Tabarz, 2014. Plenary speaker.<br>
-    – Workshop on Infinite-Dimensional Geometry, MSRI, Berkeley, 2013.<br>
-    – EQUADIFF 2013, Prague. Plenary speaker.<br>
-    – BIRS Workshop&#58; Optimal Transportation and Differential Geometry Banff, 2012.<br>
-    – MFO workshop&#58; Interplay of Analysis and Probability in Physics, Oberwolfach, 2012.<br>
-    – MFO mini-workshop&#58; Manifolds with Lower Curvature Bounds, Oberwolfach, 2012.<br>
-    – RISM meeting&#58; Multiphase and Multiphysics problems, Verbania (IT), 2011.<br>
-    – BIRS workshop&#58; Nonlinear Diffusions and Entropy Dissipation&#58; From Geometry to Biology, 2010.<br>
-    – CIRM-HCM Meeting&#58; Stochastic Analysis, SPDEs, Particle Systems, Optimal Transport 2010.<br>
-    – Wokshop on Particle systems, nonlinear diffusions, and equilibration, HCM, Bonn, 2007.<br>
-    – Workshop on Optimal Transportation, and Applications to Geophysics and Geometry, Edinburgh, 2007.<br>
-    – Workshop on Optimal transport&#58; theory and application, Centro De Giorgi, Pisa, 2006.<br>
-    – ICMS Workshop&#58; OptimalTransportation, Transport Equations and Hydrodynamics, Edinburgh,2005.<br>
-    – 10th Conference on Free Boundary Problems, Coimbra, June 7-12, 2005. Plenary speaker
-
+    – Workshop&#58; Optimal transport and Geometric Analysis, Venice, 2019<br>
+    – ICMS Workshop&#58; Gradient flows&#58; challenges and new directions, Edinburgh, 2018<br>
+    – BIRS workshop&#58; Topics in the Calculus of Variations&#58; Recent Advances and New Trends, Banff, 2018<br>
+    – BIRS workshop&#58; Entropies, the Geometry of Nonlinear Flows, and their Applications, Banff, 2018<br>
+    – MFO workshop&#58; Variational Methods for Evolution, Oberwolfach, 2017<br>
+    – MFO workshop&#58; Applications of Optimal Transportation in the Natural Sciences, Oberwolfach, 2017<br>
+    – 7th European Congress of Mathematics, Berlin&#58; section "Analysis and PDEs". Invited speaker<br>
+    – MFO workshop&#58; Heat Kernels, Stochastic Processes, and Functional Inequalities, Oberwolfach, 2016<br>
+    – Conference on New trends in Optimal Transport, HIM, Bonn, 2015<br>
+    – BIRS workshop&#58; Entropy Methods, PDEs, Functional Inequalities, and Applications, Banff, 2014<br>
+    – International Conference on Fractal Geometry and Stochastics V, Tabarz, 2014. Plenary speaker<br>
+    – Workshop on Infinite-Dimensional Geometry, MSRI, Berkeley, 2013<br>
+    – EQUADIFF 2013, Prague. Plenary speaker<br>
+    – BIRS Workshop&#58; Optimal Transportation and Differential Geometry, Banff, 2012<br>
+    – MFO workshop&#58; Interplay of Analysis and Probability in Physics, Oberwolfach, 2012<br>
+    – MFO mini-workshop&#58; Manifolds with Lower Curvature Bounds, Oberwolfach, 2012<br>
+    – RISM meeting&#58; Multiphase and Multiphysics problems, Verbania, 2011<br>
+    – BIRS workshop&#58; Nonlinear Diffusions and Entropy Dissipation&#58; From Geometry to Biology, 2010<br>
+    – CIRM-HCM Meeting&#58; Stochastic Analysis, SPDEs, Particle Systems, Optimal Transport, 2010<br>
+    – Workshop on Particle systems, nonlinear diffusions, and equilibration, HCM, Bonn, 2007<br>
+    – Workshop on Optimal Transportation, and Applications to Geophysics and Geometry, Edinburgh, 2007<br>
+    – Workshop on Optimal transport&#58; theory and application, Centro De Giorgi, Pisa, 2006<br>
+    – ICMS Workshop&#58; Optimal Transportation, Transport Equations and Hydrodynamics, Edinburgh, 2005<br>
+    – 10th Conference on Free Boundary Problems, Coimbra, 2005. Plenary speaker
 
 - title: Invited courses to international advanced schools
   type: time_table

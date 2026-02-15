@@ -1,0 +1,1399 @@
+\documentclass[reqno,11pt]{article}
+\usepackage[
+backend=biber,
+style=numeric,
+sorting=ydnt,
+doi={false}
+]{biblatex}
+
+\addbibresource{savare.bib}
+
+
+
+\usepackage{enumitem}
+\usepackage{eurosym}  
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+%\usepackage{parskip}
+ \usepackage{newpxtext,newpxmath}
+%\linespread{1.08}
+\setlength{\parskip}{1.5pt plus 0.5pt minus 0.5pt}
+\let\OLDthebibliography\thebibliography
+\renewcommand\thebibliography[1]{
+  \OLDthebibliography{#1}
+  \setlength{\parskip}{0pt}
+  \setlength{\itemsep}{0pt plus 0.3ex}}
+\setlength{\parindent}{0pt}
+%\usepackage{showkeys}
+%\usepackage{eulervm}
+% \usepackage{mathpazo} 
+% \usepackage[scaled=.95]{helvet} 
+% \usepackage{courier}
+%\usepackage{times}
+
+%\usepackage[backend=bibtex,style=alphabetic]{biblatex}
+%\bibliography{bibliografia2014}
+
+\newenvironment{myquote}{\list{}{\leftmargin=0.25in\rightmargin=0.25in}\item[]}{\endlist}
+%\renewcommand\thesection{\Alph{section}}
+\newenvironment{smallquote}{\list{}{\leftmargin=0.15in\rightmargin=0.15in\topsep=-4pt}\item[]}{\endlist}
+
+\usepackage{titlesec}
+\titleformat*{\subsection}{\large\bfseries}
+\titlespacing*{\subsection}{0pt}{1ex plus 1ex minus .2ex}{0.5ex plus
+  .2ex}
+\titlespacing*{\section}{0pt}{1ex plus 1ex minus .2ex}{0.5ex plus
+   .2ex}
+
+ \titleformat*{\subsubsection}{\bfseries}{}{}{}{}
+\titlespacing*{\subsubsection}{0pt}{0.5ex plus .2ex minus .2ex}{0.5ex plus
+   .2ex}
+ \let\mysec\subsubsection
+
+ \newcommand{\present}{}
+
+
+\AtBeginDocument{
+\addtolength{\abovedisplayskip}{-1.5ex}
+\addtolength{\abovedisplayshortskip}{-.7ex}
+\addtolength{\belowdisplayskip}{-1.5ex}
+\addtolength{\belowdisplayshortskip}{-.7ex}
+}
+
+%\setlength{\parindent}{0pt}
+\newcommand{\pind}{\hangindent \parindent
+  \indent} 
+\newcommand{\npind}{\hangindent\parindent
+  \noindent} 
+
+%\newcommand{\problem}[1]{\npind\fbox{\footnotesize#1}\quad}
+
+\newcommand{\point}[1]{\fbox{\scriptsize #1}}
+\newcommand{\squig}{{\ensuremath\rightsquigarrow}}
+\newcommand{\problem}[3]{%\smallskip
+  \npind
+  \fbox{\scriptsize #1}
+  \hspace{3pt}\textbf{#2}\\#3}
+
+\newenvironment{tightcenter}{%
+  \setlength\topsep{2pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+}
+
+\newenvironment{reducedcenter}{%
+  \setlength\topsep{2pt}
+  \setlength\parskip{0pt}
+  \begin{center}
+}{%
+  \end{center}
+\vspace{-4pt}
+}
+\newcommand{\myskip}{\smallskip\noindent}
+
+\newcommand{\workshop}[4]{#1, #2, #3, {\em #4}}
+%\newcommand{\workshop}[5]{#1, #2, #3}  %short version
+
+% \item MFO workshop: \href{https://www.mfo.de/occasion/2244/www_view}{\emph{Heat Kernels, Stochastic Processes and Functional Inequalities}}, Oberwolfach, 2022
+
+
+%\bibliography{bibliografia2014.bib}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                        %  Preamble for ERC
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage{fancyhdr}
+
+%\rhead{Curriculum}
+%\lhead{Giuseppe Savar\'e}
+%\chead{}
+%headsep=12pt,
+\usepackage[left=2.5cm, right=2.5cm,top=0.6cm,bottom=0.6cm,footskip=18pt,
+includehead, includefoot,headsep=12pt]{geometry}
+
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\let\mysec\subsubsection
+\newcommand{\switch}[2]{\iflanguage{italian}{#1}{#2}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+%\lhead{\small\itshape Giuseppe Savar\'e -- Curriculum}
+\rhead{\small\thepage}
+
+
+\newcommand{\stateoftheart}{%
+%\vspace{-12pt}
+\begin{center}
+  \bf \large State of the art
+\end{center}}
+
+\newcommand{\obmeth}{%
+  \begin{reducedcenter}
+    \bf \large Objectives and methodology.
+  \end{reducedcenter}}
+\newcommand{\objectives}{%
+  \begin{center}
+    \bf \large Objectives.
+  \end{center}}
+\newcommand{\meth}[1]{\smallskip\noindent
+  \kern-39pt
+  \fbox{$
+    {\text{\scriptsize
+        %\tiny
+        \emph{%
+          %\kern1.5pt 
+          Methodology%
+          %\kern1.5pt
+        }}} 
+  $}
+\hspace{3pt}\npind
+%\begin{minipage}[t]{0.85\linewidth}
+    #1
+%  \end{minipage}
+}
+
+\newcommand{\timescale}[1]
+{\smallskip\noindent
+  %\kern-48pt
+  \fbox{$
+    \stackrel{\text{%
+        \scriptsize
+        %\tiny
+        \emph{Timescale and}}} {{\text{%
+         \scriptsize
+         % \tiny
+         \emph{resources}}}}$}
+  \hspace{6pt}
+  %\begin{minipage}[t]{0.85\linewidth}
+    #1
+%  \end{minipage}
+  }
+\newcommand{\team}[1]{  % 
+  \begin{flushright}
+    \begin{minipage}{0.8\linewidth}
+      % \textrm{Team:} 
+      \em #1
+      \end{minipage}
+\end{flushright}}
+
+
+%  \newcommand{\team}[1]{}
+%{  % 
+%\vspace{-8pt}
+%\begin{flushright}
+%\textrm{Team:} \em #1
+%\end{flushright}}
+
+\usepackage{eucal,enumerate,mathrsfs,xspace}
+\let\Bbbk\relax
+\usepackage{amsmath,amssymb,epsfig,theorem}
+%\usepackage[toc,page]{appendix}
+
+\renewcommand{\phi}{\mathscr E}
+
+\usepackage{ifthen}
+%\numberwithin{equation}{section}
+
+
+\theoremstyle{plain}
+\newtheorem{maintheorem}{Theorem}
+\newtheorem{maincorollary}{Corollary}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+%\newtheorem{problem}[theorem]{Problem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{notation}[theorem]{Notation}
+\newtheorem{hypothesis}[theorem]{Hypothesis}
+\newtheorem{assumption}[theorem]{Assumption}
+%\newtheorem*{definition*}{Definition}
+
+
+%\theoremstyle{remark}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{claim}{Claim}
+%\newtheorem*{claim*}{Claim}
+%\newtheorem*{remark*}{Remark}
+%\newtheorem*{example*}{Example}
+%\newtheorem*{notation*}{Notation}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                        % Packages for drafts, labels, corrections
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\usepackage[normalem]{ulem}
+%\usepackage[color]{showkeys}
+\usepackage{pdfsync}
+\usepackage[colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
+\newcommand{\plambda}{$\lambda$--}
+ 
+\input macro2014
+\input macro_metric2014
+%
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%                                                         % MACRO SPECIFICHE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%
+\newcommand{\sfde}{\ssfd_\cE}
+\newcommand{\one}{{{\bf 1}}}
+\newcommand{\Vrestr}[1]{\V\kern-2pt_{#1}}
+\newcommand{\Cp}{\mathrm{Cap}}
+\newcommand{\bemph}[1]{\textbf{\emph{#1}}}
+
+%
+%
+
+\newcommand{\ssfd}{\scalebox{0.95}{\sfd}}
+\newcommand{\ssfS}{\scalebox{0.9}{\sfS}}
+\newcommand{\ssfW}{\scalebox{0.9}{\sfW}}
+
+\renewcommand{\Ch}{\scalebox{0.95}{$\mathsf{Ch}$}}
+
+\newcommand{\HK}{\mathsf{H\kern-3pt K}} 
+
+
+%\newcommand{\mymathsf}[1]{\mathsf{#1}}
+
+%
+
+\newcommand{\mybreak}{\smallskip\noindent}
+\newcommand{\biotitle}[1]{\mybreak #1\par\mybreak}
+
+
+
+
+\begin{document}
+
+\thispagestyle{empty}
+% \nocite{*}
+% \maketitle
+
+\setcounter{page}{1}
+%\cfoot{B1--b\thepage}
+\titleformat{\subsubsection}{\bfseries}{}{0pt}{}[\vspace{0.3ex}\hrule]
+\titlespacing*{\subsubsection}{0pt}{.8ex plus .2ex minus .2ex}{.4ex plus
+   .2ex}
+
+\begin{center}
+    \Large Giuseppe Savar\'e -
+    CURRICULUM
+\end{center}
+
+
+\mysec*{PERSONAL INFORMATION}
+
+\begin{tabular}{lll}
+Savar\'e Giuseppe&
+ORCID:
+  \href{https://orcid.org/0000-0002-0104-4158}{0000-0002-0104-4158}
+  &MathSciNet:	\href{https://mathscinet.ams.org/mathscinet/MRAuthorID/336952}{336952}\\
+ResearcherID: \href{https://www.webofscience.com/wos/author/record/H-3651-2014}{H-3651-2014}
+&Scopus: \href{https://www.scopus.com/authid/detail.uri?authorId=6602154611}{6602154611}
+&Google Scholar: \href{https://scholar.google.com/citations?user=w7qH1YYAAAAJ&hl=en}{w7qH1YYAAAAJ}\\
+Nationality: Italian &
+Born in Pavia, 25/08/1966\\
+\multicolumn{3}{l}{Homepage: \href{https://giuseppesavare.com}{giuseppesavare.com} \quad Email: \href{mailto:giuseppe.savare@unibocconi.it}{giuseppe.savare@unibocconi.it}}\\
+\multicolumn{3}{l}{Department of Decision Sciences, Bocconi University, Via Roentgen 1, 20136 Milano, Italy}
+\end{tabular}
+
+\mysec*{RESEARCH INTERESTS}
+Optimal Transport and entropic distances between nonnegative measures;
+gradient flows, rate-independent problems, and applications to evolution PDEs;
+analysis in metric-measure spaces: calculus, heat flow, optimal transport, non-smooth Riemannian geometry;
+variational methods for Partial Differential Equations.
+
+\mysec*{EDUCATION}
+
+%\mybreak
+1984--1988: {\em Laurea (cum laude) in Mathematics},
+University of Pavia, Italy
+%\pind{\em Problemi
+%di discretizzazione per equazioni differenziali astratte}.
+%\switch{Relatore:}{Advisor:} prof.~Claudio Baiocchi.
+
+\mysec*{CURRENT POSITION}
+2020--: \emph{Full Professor,} Mathematical Analysis. 
+Department of Decision Sciences, Bocconi University
+
+\mysec*{PREVIOUS POSITIONS}
+2000--2020: \switch{Professore ordinario di Analisi
+  Matematica}{\emph{Full Professor,}
+  Mathematical
+  Analysis}
+Department of Mathematics,   University of
+Pavia
+
+\noindent
+1998--2000: 
+\switch{\emph{Professore associato} di Analisi Matematica}{\emph{Associate professor,}}
+%Mathematical Analysis}
+University of Pavia
+
+\noindent
+1990--1998: \emph{\switch{Ricercatore}{Researcher,}}
+%\pind
+\switch{Istituto di Analisi Numerica del C.N.R.}{IMATI-CNR, Pavia}
+
+
+
+\mysec*{FELLOWSHIPS AND AWARDS}
+
+\hangindent \parindent
+\noindent 
+2025: ERC Advanced Grant, awarded for the project
+\href{https://dec.unibocconi.eu/news/giuseppe-savare-awarded-erc-advanced-grant}{\emph{Optimal Transport and Metric Structures
+for Evolution Problems}} (OPTiMiSE)
+
+\npind
+2025: Included in the \href{https://clarivate.com/highly-cited-researchers/}{\emph{Highly Cited Researchers}} list by Clarivate for the field of Mathematics
+
+\npind
+2019--2023:
+\href{https://www.ias.tum.de/ias/programs/fellowship-programs/hans-fischer-senior-fellowship/}{\emph{Hans Fischer senior fellow}}, Institute for Advanced Study,
+Technical University of Munich
+
+\npind
+2019: \emph{Plenary Speaker}, XXI Congresso Unione Matematica Italiana
+
+\hangindent \parindent
+\noindent 
+2016: \emph{Invited Speaker}, 7$^{th}$ \href{https://www.7ecm.de/home/}{European Congress of Mathematics},
+Berlin: section ``Analysis and PDEs''
+
+\hangindent \parindent
+\noindent 
+2015: \emph{John von Neumann Visiting Professor},
+Technical University of Munich
+
+\hangindent \parindent
+\noindent 
+2014: the results on Gradient Flows have been presented in the
+\href{https://smf.emath.fr/publications/expose-bourbaki-1065-flots-de-gradient-dans-les-espaces-metriques-et-leurs}{\emph{Expos\'e Bourbaki 1065: Flots de gradient dans les espaces
+  m\'etriques et leurs applications d'apr\`e Ambrosio-Gigli-Savar\'e}},
+Asterisque 361.
+
+\hangindent \parindent
+\noindent 
+  2012: The paper \emph{Chemical reactions as $\Gamma$-limit of
+    diffusion}
+  SIAM Rev. 54 (2012) (with M.~Peletier, M.~Veneroni) 
+  has been published as SIAM Review’s SIGEST award.
+
+\hangindent \parindent
+\noindent 2011: 
+\href{https://umi.dm.unibo.it/premi-old/premio-ennio-de-giorgi/}{\emph{Ennio De Giorgi Prize}},
+  awarded by the
+\emph{Italian Mathematical Union}
+% \switch{per l'Analisi Matematica}{to a 
+% mathematician under 45 years of age}
+
+% \hangindent \parindent
+% \noindent 
+% 2009--present: Membro Corrispondente, \emph{Istituto
+%   Lombardo, Accademia di Scienze e Lettere}, Milano.
+
+
+\hangindent \parindent
+\noindent
+1994: 
+\emph{Gioachino Japichino} Prize, awarded by
+the
+\emph{Accademia Nazionale dei Lincei} 
+%to a mathematician under 30 years of age
+
+
+% \mysec*{FELLOWSHIPS AND AWARDS}
+
+% \hangindent \parindent
+% 1994: 
+% \emph{Gioachino Japichino} Prize, awarded by
+% the
+% \emph{Accademia Nazionale dei Lincei} 
+% to a mathematician (under 30 years of age) for a relevant publication
+% in Analysis.
+
+% \hangindent \parindent
+% \noindent 2011: 
+% \emph{Ennio De Giorgi Prize,} first edition;
+%   awarded by the
+% \emph{Italian Mathematical Union}
+% \switch{per l'Analisi Matematica.}{to a 
+%   mathematician under 45 years of age.}
+
+
+% \hangindent \parindent
+% \noindent 
+% 2015: \emph{John von Neumann Visiting Professor},
+% Technische-Universit\"at M\"unchen.
+
+% \hangindent \parindent
+% \noindent 
+% 2016: Invited Speaker at the 7$^{th}$ European Congress of Mathematics
+% (7ECM), Berlin: section ``Analysis and PDEs''.
+
+
+\mysec*{SUPERVISION OF GRADUATE STUDENTS}
+
+% \npind
+% 5 PhD thesis: Simona Sanfelici 1998, 
+% Riccarda Rossi 2005, Stefano Lisini 2006, Marco Veneroni 2007
+% (now associate or assistant professors), and Luca Natile, 2011
+% (now high school professor).
+
+\hangindent \parindent
+\noindent \emph{Bocconi University}:\\
+current: Alessandro Pinzi
+
+\hangindent \parindent
+\noindent \emph{IAS-TUM, Munich}:\\
+2022: \href{https://sites.google.com/view/giacomoenricosodini}{Giacomo
+Sodini}
+(co-advised with M.~Fornasier,
+now PostDoc, TU Wien)
+
+\hangindent \parindent
+\noindent \emph{University of Pavia}:\\
+2019:
+\href{https://sites.google.com/view/nicolodeponti}{Nicol\`o
+De Ponti}
+(now Tenure-Track Researcher, Politecnico di Milano)\\
+2017:
+Luca
+Minotti\\
+2015:
+Giovanni
+Bonaschi (co-advised with M.~Peletier, Eindhoven; now Portfolio manager fondi Multi Asset)\\
+2014:
+\href{https://dariomazzoleni.weebly.com}{Dario
+Mazzoleni} (co-advised with A.~Pratelli, Erlangen;
+now Associate Professor, University of Pavia)\\
+2011:
+Luca
+Natile\\
+2007:
+\href{https://mate.unipv.it/~veneroni/}{Marco
+Veneroni}
+(now Associate Professor, University of Pavia)\\
+2006:
+\href{https://mate.unipv.it/lisini/}{Stefano
+Lisini}
+(now Associate Professor, University of Pavia)\\
+2005:
+\href{https://riccarda-rossi.unibs.it}{Riccarda
+Rossi}
+(now Associate Professor, University of Brescia)\\
+1998:
+\href{https://personale.unipr.it/it/ugovdocenti/person/19220}{Simona
+Sanfelici} (co-advised with P.~Colli Franzone;
+now Full Professor, University of Parma)\\
+%
+%
+%
+%
+%
+\smallskip\noindent
+I also mention the supervision of the Master thesis
+(subsequently published in international mathematical journals) of
+\href{https://sites.google.com/view/federicobassetti/}{Federico Bassetti} (now Full Professor, Politecnico di Milano),
+\href{http://arturo.imati.cnr.it/spinolo/}{Laura Spinolo} (now Senior Researcher, IMATI-CNR),
+\href{https://www.gssi.it/people/professors/lectures-maths/item/2297-daneri-sara}{Sara Daneri} (now Associate Professor, GSSI L'Aquila),
+\href{https://giulslu.github.io}{Giulia Luise} (now Researcher, Microsoft)
+
+
+\mysec*{POSTDOCTORAL FELLOWS}
+
+2024--2025: \href{https://sites.google.com/view/filipporiva/home/}{Filippo Riva}
+(now PostDoc, Charles University, Prague)\\
+2021--2023:
+\href{https://sites.google.com/view/lucatamanini}{Luca
+Tamanini}
+(now Assistant Professor, Universit\`a Cattolica del Sacro Cuore, Brescia)\\
+2017--2019:
+\href{https://sites.google.com/view/giulia-cavagnari}{Giulia
+Cavagnari}
+(now Associate Professor, Politecnico di Milano)\\
+2016--2017:
+\href{https://dariomazzoleni.weebly.com}{Dario
+Mazzoleni}
+(now Associate Professor, University of Pavia)\\
+2015--2016:
+\href{https://mate.unipv.it/orrieri/}{Carlo
+Orrieri}
+(now Associate Professor, University of Pavia),
+\href{https://www4.ceda.polimi.it/manifesti/manifesti/controller/ricerche/RicercaPerDocentiPublic.do?evn_prodotti=EVENTO&k_doc=265344&aa=2021&lang=IT}{Matteo
+Muratori}
+(now Full Professor, Politecnico di Milano)\\
+2009--2011:
+\href{http://test.dime.unige.it/it/users/edoardo-mainini}{Edoardo
+Mainini}
+(now Associate Professor, University of Genova)\\
+2007--2008:
+\href{https://www.professoren.tum.de/matthes-daniel}{Daniel
+Matthes}
+(now Associate Professor, TUM)\\
+2006--2008:
+\href{https://www.di.univr.it/?ent=persona&id=6498&lang=en}{Antonio
+Marigonda}
+(now Full Professor, University of Verona)\\
+
+% \npind 
+% 2006-2008: Antonio Marigonda (now assistant professor,
+% University of Verona) 
+
+% \npind 
+% 2007-2008: Daniel Matthes (now full professor, Technische
+% Universit\"at M\"unchen)
+
+% \npind
+% 2009-2011: Edoardo Mainini (now assistant professor, University of Genova)
+% % \npind 
+
+
+
+% % \npind 
+% % 2002: Laura Spinolo (now researcher, IMATI-CNR)
+
+% % \npind
+% % 2002: Luca Heltai (now assistant professor, SISSA, Trieste)
+
+% % \npind
+% % 2007: Sara Daneri (now Research fellow, University of Leipzig)
+
+\mysec*{TEACHING ACTIVITIES}
+\pind
+\emph{University of Pavia}:\\
+1998--2020: courses of \emph{Mathematical Methods}
+(Engineering Faculty) and \emph{Mathematical
+  Analysis} (degree in Mathematics), typically two main courses
+every year,$\sim$140 hours/year\\
+2000--2020:
+several Ph.D. courses (PDEs, Semigroups, Calculus of Variations, Optimal transport)
+
+\npind
+\emph{Bocconi University}:\\
+2020--2025: Mathematical Analysis (Bachelor), 
+Introduction to Real Analysis (Ph.D.)
+\\
+2025: Alegbraic and Topological Methods (Bachelor)
+
+\npind
+Several invited courses to \emph{international advanced schools}
+(as CIME, HIM, SNS, EVEQ)
+% \mysec*{TEACHING ACTIVITIES}
+% \pind
+% I have mainly been teaching courses of %Advanced Calculus 
+% Mathematical Methods for the Engineering Faculty.
+
+% \noindent
+% Since 2000, for the PhD programme in \emph{Mathematics and
+%   Statistics} (Pavia) I have also been teaching various courses as 
+% %Mathematical models in Electrocardiology. 
+% PDEs,
+% Semigroup Theory, % Evolution equations in
+% % Banach spaces. 
+% Calculus of Variations, Optimal transport.
+% % Transport problems,
+% % Wasserstein distance and evolution equations.
+% %Optimal transport, diffusion equations and Riemannian geometry.
+% %Variational methods for evolution problems.
+% % \begin{tabular}{ll}
+% % Mathematical models in Electrocardiology, &Partial
+% % differential equations, \\
+% % Semigroup Theory, & Evolution equations in
+% % Banach spaces,\\
+% % Calculus of Variations, &Optimal transport, \\
+% % \multicolumn{2}{l}{Transport problems,
+% % Wasserstein distance and evolution equations,}\\
+% % \multicolumn{2}{l}{Optimal transport, diffusion equations and Riemannian geometry,}\\
+% % Variational methods for evolution problems.
+% % \end{tabular}
+% \\
+% \noindent A list of invited courses to international advanced schools is
+% included in the next section c.
+
+% \switch{Si \`e principalmente svolta nell'ambito dei corsi:}{My teaching activity has been mainly concerned with the
+%  following courses:}
+% \begin{itemize}
+% \item{\sl Analisi Matematica I} \switch{}{(basic calculus for
+%   functions of one variable)}
+% \item{\sl Analisi Matematica
+%     II} \switch{}{ (advanced calculus)}
+% \item{\sl Metodi Matematici
+%     per l'Ingegneria} \switch{(Laurea triennale e laurea magistrale)}{(Mathematical Methods for Engineering)}
+
+  
+% \item{\sl Modelli Matematici per l'elettrocardiologia} 
+%   \switch{(dottorato)}{ (Mathematical models in Electrocardiology, Ph. D Course)}
+% \item{\sl Equazioni alle derivate parziali} 
+% \switch{(dottorato)}{(Partial
+%   differential equations, Ph. D. course)}
+% \item{\sl Teoria
+%     dei semigruppi} \switch{(dottorato)}{(Semigroup theory, Ph. D. course)}
+  
+%   \item{\sl Equazioni di evoluzione negli spazi di
+%       Banach} \switch{(dottorato)}{(Evolution equations in Banach spaces, Ph. D course)}
+%   \item{\sl Problemi di trasporto, distanza di
+%     Wasserstein ed equazioni di evoluzione} 
+%   \switch{(dottorato)}{(Transport problems,
+%   Wasserstein distance and evolution equations, Ph. D. course)}
+% \end{itemize}
+
+
+
+\mysec*{ORGANISATION OF SCIENTIFIC MEETINGS}
+2026: Intensive school \href{https://sites.google.com/unitn.it/mfml-2026/home}{\emph{Mathematical Foundations of Machine Learning (MFML 2026)}}, 
+%May 25-29, 
+Vason (Monte Bondone), Trento.
+
+2025: International School 
+\href{https://mmaa.lakecomoschool.org/}{\emph{Mathematical Analysis and Applications}}, 
+%June 9-13 2025, 
+Lake Como School of Advanced Studies, Villa del Grumello, Como  
+{\small (Co-organizer: M.G.~Mora)}
+
+2025: Workshop on \href{https://bidsa.unibocconi.eu/variational-methods-and-non-smooth-geometric-structures-applications}{\emph{Variational Methods and Non-Smooth Geometric Structures with Applications}}, June 3-5 2025, Bocconi University, Milan.
+
+2024: Workshop on \href{https://dec.unibocconi.eu/mathematics-artificial-intelligence-and-machine-learning}{\emph{Mathematics for Artificial Intelligence and Machine Learning}}, Universit\`a Bocconi, Milano (Co-organizers: B. Morini, E. De Vito, S. Pieraccini)
+
+2023: Workshop on \href{https://sites.google.com/view/vargeo2023/}{\emph{Variational and geometric structures for evolution}}, CIRM, Trento
+{\small (Co-organizers: D. Knees, R. Rossi, M. Thomas)}
+
+2023: \href{https://www.ias.tum.de/ias/event-pages/workshop-otmfml/home/}{\emph{Workshop on Optimal Transport, Mean-Field Models, and
+  Machine Learning}}, IAS-TUM, Munich
+{\small (Co-organizers: M. Burger, M. Fornasier,
+  G. Peyr\'e)}
+  
+\npind
+2026, 2024, 2022, 2018, 2016, 2014, 2012, 2010, 2008: \href{http://www.crm.sns.it/event/501/}{\emph{Workshops on Optimal
+Transportation and Applications}},
+Pisa {\small (Co-organizers: L. Ambrosio, G. Buttazzo, N. Gigli)}
+
+\npind
+2022: \href{https://contrendspde.wordpress.com}{\em Contemporary Trends in Kinetic Theory and PDEs}, Pavia {\small (Co-organizers: J.A. Carrillo, A. Pulvirenti, M. Zanella)}
+
+\npind
+2018: School on \href{https://otnm.lakecomoschool.org}{\emph{Optimal transport: numerical methods and
+  applications}},
+Lake Como School of Advanced Studies {\small (Co-organizer: F.~Santambrogio}).
+
+\npind
+2018: Workshop \href{https://sites.google.com/view/controlpv2018}{\emph{Optimal Control and Mean Field Games}}, Pavia
+{\small (Co-organizers: G. Cavagnari, S. Lisini, C. Orrieri)}
+
+
+\npind
+2016: Bimester on \href{https://appliedmath.univie.ac.at/public/ESI_nonlinear_flows/}{\emph{Nonlinear Flows}}, Research Centre ESI,
+Vienna
+{\small (Co-organizers: E. Feireisl, A. Juengel, A. Mielke, U. Stefanelli)}
+
+\npind
+2014 and 2011: MFO Workshop \emph{Variational Methods for Evolution},
+Oberwolfach {\small (Co-organizers: L. Ambrosio, A. Mielke,
+  M. Peletier, F.~Otto, U. Stefanelli)}
+
+\npind
+2011: Conference \emph{Analysis and Numerics of PDEs. In memory of Enrico Magenes}, Pavia
+
+\npind
+2010: BIRS Workshop: \emph{Rate-independent systems: Modeling,
+  Analysis, and Computations},
+Banff {\small (Co-organizer: U. Stefanelli)}
+
+\npind
+2008: CIME Course: \emph{Nonlinear Partial Differential Equations and
+  Applications}, Cetraro {\small (Co-organizer: L. Ambrosio)}
+
+
+
+% \pind 2016: bimester on \emph{Nonlinear Flows}, 
+% Research Centre ESI, 
+% University of Vienna.\\
+% Co-organizers:
+% E.~Feireisl, A.~Juengel, A.~Mielke, U.~Stefanelli.
+
+% \npind
+% 2011 and 2014: MFO Workshop.
+% \emph{Variational Methods for Evolution},
+% Oberwolfach (DE).\\
+% Co-organizer: L. Ambrosio, A. Mielke, M. Peletier, U. Stefanelli.
+
+
+% \npind
+% 2008, 2010, 2012, 2014: Workshops on \emph{Optimal Transportation and Applications},
+% De Giorgi Center, Pisa (IT).
+% Co-organizer: L. Ambrosio, G. Buttazzo.
+
+% \npind
+% 2011: Conference 
+% \emph{Analysis and Numerics of PDEs - In memory of Enrico Magenes,} 
+% Pavia (IT).
+
+% \npind
+% 2010: BIRS Workshop: \emph{Rate-independent systems: Modeling, Analysis, and
+% Computations}, Banff (CA).
+% Co-organizer: U. Stefanelli.
+
+
+% \npind 
+% 2008: CIME Course: \emph{Nonlinear Partial Differential Equations and Applications,}
+% Cetraro (IT).\\
+% Co-organizer: L. Ambrosio.
+
+
+
+\mysec*{INSTITUTIONAL RESPONSIBILITIES}
+
+\pind
+2019: Director of the \emph{Advanced School of Ph.D.~Higher Education}
+(SAFD), University of Pavia\\
+2014--2016:
+\switch{Membro del Nucleo di Valutazione,}{\emph{University Assessment
+    Commission}}, University of Pavia\\
+2001--2008: Director of the \emph{Ph.D.~program in Mathematics and
+  Statistics}, University of Pavia\\
+\npind
+1998--present: IMATI-CNR, research associate
+
+
+
+
+\mysec*{EDITORIAL AND ADVISORY BOARDS}
+
+
+\pind
+2023--\present: \href{https://www.esaim-cocv.org}{ESAIM: Control, Optimisation and Calculus of Variations},
+member of the \emph{editorial board}\\
+2018–\present: Unione Matematica Italiana, member of the \emph{Scientific Advisory Board} % (UMI).  
+
+\npind
+2014--\present:
+C.I.M.E.~Foundation, member of the \emph{Scientific Advisory Board}
+% \switch{Membro del Consiglio Scientifico della fondazione
+%   C.I.M.E.}{\emph{Scientific Advisory Board}, C.I.M.E.~foundation}
+
+\npind
+2016–\present: \href{https://www.springer.com/journal/245}{Applied Mathematics and Optimization}, member of
+the \emph{editorial board}\\
+2013–\present: \href{https://www.springer.com/journal/11118}{Potential Analysis}, member of the \emph{editorial board}
+
+\mysec*{MEMBERSHIPS OF SCIENTIFIC SOCIETIES}
+
+\hangindent \parindent
+\noindent 
+2009--\present: Membro Corrispondente, \emph{Istituto
+  Lombardo, Accademia di Scienze e Lettere}, Milano
+
+% \npind
+% 1998–\present: IMATI-CNR, research associate  
+
+
+
+% \mysec*{COMMISSIONS OF TRUST}
+
+
+% 2014--present:
+% \switch{Membro del Consiglio Scientifico della fondazione
+%   C.I.M.E.}{Scientific Advisory Board, C.I.M.E.~foundation, Firenze, Italy.}
+
+% \npind
+% 2014--present:
+% \switch{Membro del Nucleo di Valutazione,}{University Assessment Commission,}
+% University of Pavia.
+
+
+%\mysec*{MEMBERSHIPS OF SCIENTIFIC SOCIETIES}
+
+
+% 201? –	Member, Research Network “Name of Research Network”
+% 200? –	Associated Member, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country
+% 200? –	Funding Member, Name of Faculty/ Department/Centre, Name of University/ Institution/ Country 
+
+
+
+% \mysec*{MAJOR COLLABORATIONS}
+% I have collaborated with more than 50 different co-authors. Among the main
+% collaborations (not counting former Ph.D.~students and post-docs),
+% I recall
+
+
+
+% \npind 
+% \emph{Luigi Ambrosio} (Scuola Normale Superiore, Pisa, I): %since 1998:
+% Optimal Transport, Gradient flows, analysis in metric spaces.
+% Together with N. Gigli, we wrote the monograph
+% \emph{Gradient flows in metric spaces and in spaces of probability
+%   measures,}
+% Birkh\"auser, 2005 (second edition in 2008)
+
+
+% \npind
+% \emph{Piero Colli Franzone} (Pavia): %since 1996: 
+%  mathematical models for electrocardiology
+
+
+
+%  \npind
+% \emph{Jean Dolbeault} (Universit\'e Paris Dauphine, Paris): %since 2006:
+% Transport distances, functional inequalities
+
+% \npind
+% \emph{Massimo Fornasier} (Technical University of Munich): mean-field
+% optimal control
+
+
+% \npind
+% \emph{Alexander Mielke} (WIAS, Berlin): %since 2005:
+% Rate-independent processes, doubly-nonlinear evolution equations,
+% Optimal Entropy-Transport problems
+
+
+% \npind
+% \emph{Nicola Gigli} (SISSA, Trieste):
+% %since 2002:
+% % Optimal Transport, Gradient flows, 
+% analysis in metric-measure spaces
+
+% % \npind
+% % \emph{Robert McCann} (Toronto, CA): Fourth order nonlinear diffusion
+% % equations
+
+% \npind
+% \emph{Ricardo H. Nochetto} (University of Maryland, USA): %1996-2006:
+% optimal error estimates for %nonlinear 
+% evolution problems
+
+% \npind
+% \emph{Mark Peletier} (TU
+% Eindhoven, NL): %since 2008:
+% Reaction-diffusion systems, Fokker-Planck equations
+
+% \npind
+% \emph{Giuseppe Toscani} (Pavia, I): %since 2006:
+% nonlinear diffusion equations, entropy methods. % functional inequalities.
+
+
+% I also collaborated with \emph{Yann Brenier, Jos\'e A. Carrillo,
+%   Robert McCann, Wilfrid Gangbo, Alessio Porretta, Dejan Slepcev, Lorenzo Zambotti}
+% on various evolutionary models related to Optimal Transport.
+
+
+
+\newpage
+% (sticky particle, 4th order equations,
+% nonlinear mobility) related to Optimal Transport.
+
+% \npind, Yann Brenier, Jose
+%   Carrillo, Lorenzo Zambotti}
+
+% \mysec*{EDITORIAL BOARDS}
+
+% \npind
+% 2013--present: Potential Analysis.
+
+% \mysec*{RESEARCH PROJECTS}
+
+% Leader of the Pavia Research unit of the 
+% following Projects of National Interest (PRIN)
+% funded by the Italian ministry of
+% education (MIUR):
+
+% \npind
+% 2007-2009: \emph{Optimal Transport and evolution variational
+%   problems}. National leader: Luigi Ambrosio
+
+% \npind
+% 2010-2012: \emph{Variational, functional-analytic, and optimal
+%   transport methods for dissipative evolutions and stability
+%   problems}. National leader: Luigi Ambrosio
+
+% \npind
+% 2013-2016: \emph{Calculus of Variations}. 
+% National leader: Gianni Dal Maso.
+
+
+
+
+\renewcommand{\textsf}[1]{[#1]}
+\subsection*{Publications}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+%\begin{thebibliography}{PSCF05b}
+Author of 110 publications, 
+with 15000+ citations, H-index 49 according to 
+\href{https://scholar.google.com/citations?hl=en&user=w7qH1YYAAAAJ&view_op=list_works&sortby=pubdate}{Google Scholar}.\\
+
+% \href{https://mathscinet.ams.org/mathscinet/}{MSC database}
+% attributes to me 107 publications, 
+% 6500+ citations by 3400+
+% authors, H-index 36. %  (44 publications in the last 10 years, which
+% received 1440 citations)
+% Seven of the papers listed below belong to the
+% group of
+% \href{https://images.webofknowledge.com/images/help/WOS/hs_citation_applications.html}{Highly
+%   cited papers} according to WOS.
+% as of May/June 2022,
+% the paper received enough citations to place it in the top 1\%
+% of the academic field of Mathematics based on a highly cited threshold for the field and publication year.
+
+% The most relevant contributions of my research activity over the past
+% ten years concern:
+
+%\mybreak
+
+% \textbf{Foundation of the theory of metric-measure spaces with
+%   \emph{Riemannian Ricci Curvature bounded from below} (the so-called
+%   RCD$(K,N)$ condition):}
+
+
+\begin{itemize}[wide,
+  topsep=-0.5\parsep,
+  itemsep=-4pt,
+  leftmargin=12pt,
+  %listparindent=-24pt,
+  %itemindent=-12pt
+  ]
+\renewcommand{\labelitemi}{$\diamond$}
+%\bibitem[1]{} %AGS14a]{AGS14a}
+%G.~Savar{\'e}.
+%\bibitem[3]{}%{AGS14b}
+
+
+%   \item%
+% \href{https://doi.org/10.1112/PLMS/PDV047}{\emph{Convergence of pointed non-compact metric measure
+%     spaces and stability of Ricci curvature bounds and heat flows.}}
+%   (with A.~Mondino, N.~Gigli)\\
+%   \newblock{Proc. Lond. Math. Soc.} 111 (2015): 1071-–1129. Cit.~69
+\item
+  \textbf{Foundation of the theory of metric-measure spaces with
+  \emph{Riemannian Ricci curvature bounded from below} (the so-called
+  RCD$(K,N)$ condition):}
+
+\begin{itemize}[
+  topsep=-2\parsep,
+  itemsep=-2pt,
+  leftmargin=12pt,
+  % listparindent=-12pt,
+  itemindent=-12pt
+  ]
+\renewcommand{\labelitemii}{}
+  
+\item%[\bf 1.] 
+\href{https://doi.org/10.1007/s00222-013-0456-1}{\emph{Calculus and heat flow in metric measure spaces and applications to
+  spaces with {R}icci bounds from below}} (with L.~Ambrosio, N.~Gigli).
+\newblock {Invent. Math.} 195 (2014), 289--391. %Cit.~202
+(\footnotemark[1]{})\\
+{\small\textsf{Heat flow and Cheeger energy
+in metric--measure spaces: $L^2$ and Optimal Transport theory}}
+
+
+%\bibitem[2]{}%{AGS14b}
+%and G.~Savar{\'e}.
+\item%[\bf \bf 2.]
+\href{https://doi.org/10.1215/00127094-2681605}{\emph{Metric measure spaces with {R}iemannian {R}icci curvature bounded
+  from below}}
+  (with L.~Ambrosio, N.~Gigli).
+\newblock {Duke Math. J.}, 163
+(2014):1405--1490. %Cit.~238 
+(\footnotemark[1]{}).\\
+{\small\textsf{The first analysis and characterization
+  of Riemannian RCD(K,$\infty$) spaces with quadratic Cheeger energy}}
+
+\item%[\bf 3.] %, and G.~Savar{\'e}.
+  \newblock
+  \href{https://doi.org/10.1214/14-AOP907}{\emph{Bakry-\'{E}mery curvature-dimension condition and
+{R}iemannian {R}icci curvature bounds}}
+(with L.~Ambrosio, N.~Gigli).
+\newblock {Annals of Probability},  43 
+(2015): 339--404.  %Cit.~122 
+(\footnotemark[1]{})\\
+{\small\textsf{The full identification between the Bakry-\'Emery
+  condition and RCD(K,$\infty$) spaces}}
+
+\item%
+\href{https://doi.org/10.3934/DCDS.2014.34.1641}{\emph{Self-improvement of the Bakry-\'Emery condition and
+    Wasserstein contraction of the heat flow in RCD$(K,\infty)$ metric
+    measure spaces}}
+\newblock{Discrete Contin. Dyn. Syst.} 34 (2014): 1641–1661. %Cit.~70
+(\footnotemark[1]{})\\
+{\small\textsf{Second order calculus, measure-valued $\Gamma_2$-tensor, and
+    improved
+    Bakry-\'Emery
+  condition}}
+
+\item\href{https://doi.org/10.1112/plms/pdv047}{\em 
+  Convergence of pointed non-compact metric measure spaces and
+  stability of Ricci curvature bounds and heat flows}
+(with N.~Gigli, A.~Mondino)
+\newblock {Proc. Lond. Math. Soc.} 111 (2015): 1071–1129. %Cit.~83
+(\footnotemark[1]{})
+
+  \item%
+\href{https://doi.org/10.1090/memo/1270}{\emph{Nonlinear diffusion equations and curvature conditions
+    in metric measure spaces}}
+  (with L.~Ambrosio, A.~Mondino)
+  \newblock{Mem. Amer. Math. Soc.} 262 (2019), no. 1270, v+121 pp.
+  % ISBN: 978-1-4704-3913-2.
+  %Cit.~49
+  \\
+    {\small\textsf{The full identification between the Bakry-\'Emery
+      condition and the RCD$(K,N)$ spaces}}
+\end{itemize}
+
+\item
+  \textbf{Metric-Sobolev spaces: identification of the construction by
+    Lipschitz functions and Cheeger energy with the Newtonian approach}
+\begin{itemize}[
+  topsep=-2\parsep,
+  itemsep=-2pt,
+  leftmargin=12pt,
+  % listparindent=-12pt,
+  itemindent=-12pt
+  ]
+  \renewcommand{\labelitemii}{}
+
+  \item%
+\href{https://doi.org/10.4171/RMI/746}{\emph{Density of Lipschitz functions and equivalence of weak
+    gradients in metric measure spaces}}
+  (with L.~Ambrosio, N.~Gigli)
+  \newblock {Rev. Mat. Iberoam.} 29 (2013): 969--996. %Cit.~96 
+  (\footnotemark[1]{})
+\end{itemize}
+\item
+  \textbf{Entropy-Transport formulation for unbalanced optimal
+    transport and the characterization of the new Hellinger-Kantorovich distance}
+
+\begin{itemize}[
+  topsep=-2\parsep,
+  itemsep=-2pt,
+  leftmargin=12pt,
+  % listparindent=-12pt,
+  itemindent=-12pt
+  ]
+\renewcommand{\labelitemii}{}
+
+  \item%
+\href{https://doi.org/10.1007/S00222-017-0759-8}{\emph{Optimal entropy-transport problems and a new
+    Hellinger-Kantorovich distance between positive measures}}
+  (with M.~Liero, A.~Mielke).
+  \newblock{Invent. Math.} 211 (2018): 969--1117. %Cit.~34 
+  (\footnotemark[1]{})
+\end{itemize}
+
+  \item \textbf{Foundation of Balanced Viscosity and Visco-Energetic solutions
+to rate-independent processes in infinite-dimensional spaces}
+
+\begin{itemize}[
+  topsep=-2\parsep,
+  itemsep=-2pt,
+  leftmargin=12pt,
+  % listparindent=-12pt,
+  itemindent=-12pt
+  ]
+\renewcommand{\labelitemii}{}
+  \item%[\bf 4.] %and G.~{Savar{\'e}}.
+\href{https://doi.org/10.4171/JEMS/639}{\emph{Balanced viscosity (BV) solutions to infinite-dimensional
+  rate-independent systems}} (with A.~Mielke, R.~Rossi).
+\newblock {J. Eur. Math. Soc. (JEMS)} 18 (2016): 2107--2165. %Cit.~35
+{\small\textsf{The first contribution to existence, characterization,
+  and properties of Balanced 
+  Viscosity solutions
+in infinite dimension.}}
+
+  
+% %\bibitem[MRS13a]{Mielke-Rossi-Savare-preprint13}
+% \item%[\bf 4.] %and G.~{Savar{\'e}}.
+% \newblock {\em Balanced viscosity (BV) solutions to infinite-dimensional
+%   rate-independent systems} (with A.~Mielke, R.~Rossi).
+% \newblock {JEMS, to appear}; ArXiv 1309.6291:1--41.
+
+%\item 
+% \newblock {\em On the duality between $p$-Modulus and probability
+%   measures}
+% (with L.~Ambrosio, S.~Di Marino).
+% \newblock {JEMS, to appear};
+% ArXiv e-prints 1311.1381: 1-40.
+% {\small
+% \textsf{Equivalence of the metric definition of Sobolev spaces
+%     based on $p$-modulus or on probability measures on
+%     curves}}
+
+% Brenier, Y.; Gangbo, W.; Savaré, G.; Westdickenberg, M. Sticky
+% particle dynamics with interactions. J. Math. Pures Appl. (9) 99
+% (2013), no. 5, 577–617. (Reviewer: Luisa Arlotti)
+
+
+% Orrieri, Carlo; Porretta, Alessio; Savaré, Giuseppe A variational
+% approach to the mean field planning problem. J. Funct. Anal. 277
+% (2019), no. 6,
+
+%  \href{https://doi.org/10.1016/j.matpur.2018.06.022}{\em
+%    Weighted energy-dissipation principle for gradient flows in
+%  metric spaces.} (with R.~Rossi, A.~Segatti, U.~Stefanelli)
+% J. Math. Pures Appl. (9) 127 (2019), 1–66. 
+
+\item%
+\href{https://mathscinet.ams.org/leavingmsn?url=https://doi.org/10.1007/s00205-017-1165-5}{\em
+  Viscous corrections of the time incremental minimization scheme and
+  visco-energetic solutions to rate-independent evolution problems.}
+(with L.~Minotti) Arch. Ration. Mech. Anal. 227 (2018), no. 2,
+477-543.
+
+\end{itemize}
+
+\item \textbf{The mean-field formulation of spatially inhomogeneous Evolutionary
+  Games}
+
+\begin{itemize}[
+  topsep=-2\parsep,
+  itemsep=-2pt,
+  leftmargin=12pt,
+  % listparindent=-12pt,
+  itemindent=-12pt
+  ]
+\renewcommand{\labelitemii}{}
+\item%
+  \href{https://doi.org/10.1002/cpa.21995}{\emph{Spatially Inhomogeneous Evolutionary Games}}
+  (with L.~Ambrosio, M.~Fornasier, M.~Morandotti)\\
+  \newblock{Comm. Pure Appl. Math.} 74 (2021): 1353--1402
+\end{itemize}
+\end{itemize}
+
+% In addition to the above papers and topics, in the last ten years I have also been working on
+% \begin{smallquote}
+%   \emph{sub-linear diffusion, chemical reactions as $\Gamma$-limit of
+%     diffusion, Cahn-Hilliard and thin-film equations with nonlinear
+%     mobility,     viscoplasticity at finite strain,
+%     sticky particle dynamics with
+%     interactions,
+%     mean-field optimal control and mean-field planning,
+%     the concavity of R\'enyi entropy power,
+%     variational convergence of gradient flows and
+%     rate-independent evolutions,
+%     the Weighted Energy-Dissipation
+%     principle for gradient flows, reverse
+%     approximation of gradient flows, jump processes as generalized
+%     gradient flows,
+%     the Opial property in Wasserstein
+%     spaces, duality
+%     properties of metric Sobolev spaces and capacity.}
+% \end{smallquote}
+
+\footnotetext[1]{\emph{A Highly cited paper according to WOS}}
+
+%\newpage
+
+\subsection*{Monographs and contributions to volumes}
+
+\begin{itemize}[topsep=-0.5\parsep,itemsep=-4pt,leftmargin=12pt,listparindent=-12pt,itemindent=-12pt] 
+\renewcommand{\labelitemi}{}
+%\bibitem[AGS08]{MR2401600}%
+%L.~Ambrosio, N.~Gigli, and G.~Savar{\'e}.
+\item
+\href{https://doi.org/10.1007/978-3-030-84141-6}{\em Sobolev Spaces in Extended Metric-Measure Spaces} 
+\newblock in \emph{New Trends on Analysis and Geometry in Metric Spaces.}
+Lecture Notes in Mathematics, Springer 2022, 117--276.\\
+{\small\textsf{The refined theory of metric Sobolev space generated by
+    sub-algebra of Lipschitz functions in extended metric-measure spaces.}}
+    
+
+\item \href{https://link.springer.com/book/10.1007/b137080}{\em Gradient flows in metric spaces and in the space of probability
+   measures} (with L.~Ambrosio, N.~Gigli)
+\newblock Lectures in Mathematics ETH Z\"urich. Birkh\"auser Verlag, Basel,
+ 2005 (second edition 2008).\\
+ The two editions have received more than
+1500 
+ citations, according to MSC.
+
+\item
+\href{https://link.springer.com/chapter/10.1007/88-470-0396-2_6}{\em 
+Computational electrocardiology: mathematical and numerical modeling}
+ (with P.~Colli~Franzone, L.~F. Pavarino; contribution).
+ \newblock In {Complex systems in biomedicine}, pages 187--241. Springer
+ Italia, Milan, 2006.
+
+
+
+
+
+
+
+\end{itemize}
+\subsection*{Invited presentations to conferences (selection)}
+\newcommand{\noemph}[1]{#1}
+\begin{itemize}[topsep=-0.5\parsep,itemsep=-4pt,leftmargin=*] 
+  \renewcommand{\labelitemi}{--}
+  \item CIRM Workshop: 
+  \href{https://conferences.cirm-math.fr/3049.html}{\em Aggregation-Diffusion Equations \&\ Collective Behavior:
+Analysis, Numerics and Applications}, Marseille, 2024
+\item 
+  MFO Workshop: 
+\href{https://www.mfo.de/occasion/2406/www_view}{\em Applications of
+    Optimal Transportation}, Oberwolfach, {2024}
+  \item 
+  \workshop{ICMS Workshop:   \href{https://www.icms.org.uk/workshops/2023/optimal-transport-and-calculus-variations}{Optimal Transport and the Calculus of Variations}}{Edinburgh}{2023}{Geodesic convexity of entropy functionals in Hellinger-Kantorovich metric}
+  \item 
+  \workshop{Workshop on 
+  \href{https://www.msp2023.campus.unimib.it}{The Mathematics of Subjective Probability}}{Milano}{2023}{Sobolev spaces on the Wasserstein space of probability measures}
+  \item 
+  \workshop{Workshop \href{https://events.dm.unipi.it/event/77}{Calculus of Variations \& Geometric Measure Theory}}{Pisa}{2023}{Evolution of probability measures: beyond gradient flows}
+  \item 
+  \workshop{BIRS Workshop: \href{https://www.birs.ca/events/2023/5-day-workshops/23w6003}{Nonlinear Diffusion and nonlocal Interaction Models - Entropies, Complexity, and Multi-Scale Structures}}{Granada}{2023}{A Lagrangian approach to dissipative evolutions of probability measures}
+  \item \workshop{Workshop \href{https://brinmrc.umd.edu/programs/workshops/spring23/spring23-workshop-numerics.html}{\noemph{Frontiers of Numerical PDEs}}}{Maryland}{2023}{Evolution equations in spaces of probability measures}
+  \item \workshop{Workshop \href{https://sites.google.com/view/ot-lagrange/barycenters-interpolation-harmonic-maps?authuser=0}{\noemph{Interpolation of Measures}}}{Paris}{2023}{Fine properties of geodesics and geodesic $\lambda$-convexity for the Hellinger-Kantorovich distance}
+\item \workshop{MFO workshop: \href{https://www.mfo.de/occasion/2244/www_view}{\noemph{Heat Kernels, Stochastic Processes and Functional Inequalities}}}{Oberwolfach}{2022}{Capacitary modulus and Newtonian-Sobolev capacity in metric measure spaces}
+\item \workshop{HCM Conference: \href{https://www.hcm.uni-bonn.de/events/eventpages/2022/from-dirichlet-forms-to-wasserstein-geometry/}{\noemph{From Dirichlet Forms to Wasserstein
+    Geometry}}}{Bonn}{2022}{Density of subalgebras of Lipschitz functions in metric Sobolev spaces and applications to measured Wasserstein spaces}
+\item \workshop{Workshop on \href{https://people.maths.ox.ac.uk/carrillo/Capri/anacapri4.html}{Frontiers in Nonlocal Nonlinear PDEs}}{Anacapri}{2022}{Dissipative evolutions of probability measures}  \item \workshop{Workshop \href{https://sites.google.com/uniroma1.it/summerschool2022/home-page?authuser=0}{\noemph{20 years of Summer Schools on CalcVar in Rome}}}{Roma}{2022}{Evolution of probability measures}
+% \item Workshop on \href{http://people.maths.ox.ac.uk/carrillo/Capri/anacapri4.html}{\em Frontiers in Nonlocal Nonlinear PDEs}, Anacapri, 2022
+\item \workshop{Workshop \href{https://sites.google.com/view/gmtcortona2020/?pli=1}{Geometric Measure Theory and applications}}{Cortona}{2021}{Lipschitz approximation, Capacity and Capacitary Modulus in metric Newtonian-Sobolev spaces}
+\item \workshop{MFO workshop: \href{https://publications.mfo.de/handle/mfo/3858}{\noemph{Applications of Optimal Transportation in the Natural Sciences}} (online)}{Oberwolfach}{2021}{Dissipative evolution of measures}
+\item \workshop{Workshop: \href{https://gianni65.weebly.com}{\noemph{Calculus of Variations and Applications}}}{SISSA, Trieste}{2020}{Singular perturbation of gradient flows and rate-independent evolution}
+\item \href{https://umi.dm.unibo.it/congresso2019/}{\noemph{XXI Congresso Unione Matematica Italiana}}, 2019. {Plenary Speaker}
+\item Workshop: \href{https://otgeoan.wixsite.com/venice}{\noemph{Optimal transport and Geometric Analysis}}, Venice, 2019.
+\item ICMS Workshop: \href{https://www.icms.org.uk/workshops/2018/gradient-flows-challenges-and-new-directions}{\noemph{Gradient flows: challenges and new directions}, Edinburgh}, 2018.
+\item BIRS workshop:
+  \href{https://www.birs.ca/events/2018/5-day-workshops/18w5094}{\noemph{Topics in the Calculus of Variations: Recent Advances and New Trends}}, Banff, 2018.
+\item BIRS workshop: \href{https://www.birs.ca/events/2018/5-day-workshops/18w5069}{\noemph{Entropies, the Geometry of Nonlinear Flows, and their Applications}}, Banff, 2018.
+\item MFO workshop: \href{https://publications.mfo.de/handle/mfo/3618}{\noemph{Variational Methods for Evolution} Oberwolfach}, 2017
+\item MFO workshop: \href{https://publications.mfo.de/handle/mfo/3571}{\noemph{Applications of Optimal Transportation in
+    the Natural Sciences} Oberwolfach}, 2017
+\item  7$^{th}$ European Congress of Mathematics,
+Berlin: section ``Analysis and PDEs''. Invited speaker.
+\item MFO workshop: \href{https://publications.mfo.de/handle/mfo/3559}{\noemph{Heat Kernels, Stochastic Processes, and Functional Inequalities}}, Oberwolfach, 2016.
+\item Conference on \href{https://wt.iam.uni-bonn.de/conference-new-trends-in-optimal-transport}{\noemph{New trends in Optimal Transport}}, HIM, Bonn, 2015.
+\item BIRS workshop: \href{https://www.birs.ca/events/2014/5-day-workshops/14w5109}{\noemph{Entropy Methods, PDEs, Functional Inequalities, and
+  Applications}},
+Banff, 2014.
+\item International Conference on
+\noemph{Fractal Geometry and Stochastics V}, Tabarz, 2014.
+Plenary
+speaker.
+
+\item Workshop on
+  \href{https://www.msri.org/workshops/728}{\noemph{Infinite-Dimensional Geometry}},
+MSRI, Berkeley, 2013.
+
+
+\item EQUADIFF 2013, Prague. Plenary speaker.
+
+% \item Conference on \noemph{Probability and Geometry},
+% Poitiers, 2012.
+
+\item BIRS Workshop: \noemph{Optimal Transportation and Differential Geometry}
+Banff, 2012.
+
+\item MFO workshop: \href{https://publications.mfo.de/handle/mfo/3277}{\noemph{Interplay of Analysis and Probability in Physics}},
+Oberwolfach, 2012.
+
+\item MFO mini-workshop: \href{https://publications.mfo.de/handle/mfo/3273}{\noemph{Manifolds with Lower Curvature Bounds}},
+Oberwolfach, 2012.
+
+\item RISM meeting: \href{https://www.mate.polimi.it/workshop/RISM3/index.php?tab=home}{\noemph{Multiphase and Multiphysics problems}}, 
+ Verbania (IT), 2011.
+
+ \item BIRS workshop: \href{http://www.birs.ca/events/2010/5-day-workshops/10w5054}{\noemph{Nonlinear Diffusions and Entropy
+   Dissipation: From Geometry to Biology}}, %Banff, 
+   2010.
+
+ \item CIRM-HCM Meeting:
+ \noemph{Stochastic Analysis, SPDEs, Particle Systems, Optimal Transport}
+ %Levico (IT), 
+ 2010.
+
+\item Workshop on \href{https://www.him.uni-bonn.de/programs/past-programs/past-trimester-programs/complex-stochastic-systems-discrete-vs-continuous/workshop-3-particle-systems-nonlinear-diffusions-and-equilibration/}{\noemph{Particle systems, nonlinear diffusions, and equilibration}},
+ HCM, Bonn, 2007.
+
+ \item Workshop on 
+ \noemph{Optimal Transportation, and Applications to Geophysics and Geometry},
+ Edinburgh, 2007.
+
+\item Workshop on \noemph{Optimal transport: theory and application}, Centro De Giorgi, Pisa, 2006.
+
+% \item \noemph{Nonlinear Diffusion Equations and related PDEs},
+%  UAM, Madrid, 2006
+
+ % \item Workshop on \noemph{Modelling and analysis of phase transitions}
+ % Centro De Giorgi, Pisa, 2006.
+
+ \item ICMS Workshop: \noemph{Optimal Transportation, Transport Equations and Hydrodynamics},
+ Edinburgh, 2005.
+
+ \item \noemph{10th Conference on Free Boundary Problems},
+ Coimbra, June 7-12, 2005. Plenary speaker.
+\end{itemize}
+
+\subsection*{Invited courses to international advanced schools}
+
+\begin{itemize}[topsep=-0.5\parsep,itemsep=-4pt,leftmargin=*] 
+  \renewcommand{\labelitemi}{--}
+
+\item CIME course on 
+\href{https://link.springer.com/book/10.1007/978-3-030-84141-6}{\emph{New Trends on Analysis and Geometry in
+    Metric Spaces}},
+  Levico Terme, Italy 2017:
+  Sobolev Spaces in Extended Metric-Measure Spaces
+  
+\item
+\href{https://www.him.uni-bonn.de/programs/past-programs/past-junior-trimester-programs/optimal-transportation/workshop-gradient-flows-and-entropy-methods/}{\emph{Gradient flows and entropy methods}}, HIM, Bonn, 2015:
+The Weighted Energy-Dissipation (WED) principle for gradient flows.
+
+
+\item 
+\href{https://cvgmt.sns.it/event/270/}{\emph{Analysis and Geometry on Singular Spaces}},
+Scuola Normale Superiore, Pisa, 2014:
+Metric measure spaces with Riemannian Ricci curvature bounded from below.
+
+\item
+\href{https://www1.mat.uniroma1.it/people/garroni/School2013.html}{\emph{Seventh Summer School in Analysis and Applied Mathematics}},
+Roma, 2013: Gradient flows and rate-independent evolutions: a variational approach.
+
+ \item
+CNA Summer School on
+\href{https://www.math.cmu.edu/cna/2010CNASummerSchoolFiles/index.html}{\emph{ "New Vistas in Image Processing and PDEs"}}
+Carnegie Mellon University, Pittsburgh, 2010:
+Applications of optimal transport to evolutionary PDEs.
+
+\item 
+ \emph{School on "Optimal transport: Theory and applications"}
+ Institut Fourier, Grenoble, 2009: Gradient flows and optimal transport.
+
+ \item 
+ \href{https://www2.karlin.mff.cuni.cz/~prusv/ncmm/conference/eveq2008/info.html}{\emph{EVEQ2008}},
+ Prague, 2008: A variational approach to gradient flows and rate-independent problems.
+
+ \item 
+ \emph{School in Nonlinear Analysis and Calculus of Variations}
+ Scuola Normale Superiore, Pisa, 2006:
+ Gradient flows: a variational approach.
+\end{itemize}
+
+% \medskip
+% DICHIARAZIONE SOSTITUTIVA DI CERTIFICAZIONE (ART. 46 E 47 D.P.R. 445/2000)
+% Il sottoscritto Giuseppe Savar\'e  ai sensi e per gli effetti degli articoli 46 e 47 e consapevole delle sanzioni penali previste dall’articolo 76 del D.P.R. 28 dicembre 2000, n. 445 nelle ipotesi di falsità in atti e dichiarazioni mendaci, dichiara che le informazioni riportate nel presente curriculum vitae corrispondono a verità.
+
+\vspace{.5truecm}
+Milano, February 14, 2026
+
+\begin{center}
+  Giuseppe Savar\'e
+\end{center}
+\newpage
+% \begin{center}
+% Giuseppe Savar\'e - List of publications
+% \end{center}
+
+\nocite{*}
+{\renewcommand{\markboth}[2]{}% Remove header adjustment
+\printbibliography[title={List of publications}]}
+
+
+\end{document}
