@@ -2,6 +2,7 @@
 layout: about
 title: about
 permalink: /
+nav_order: 1
 subtitle: >
   Professor of Mathematical Analysis <br>
   <a href="https://dec.unibocconi.eu">Department of Decision Sciences, Bocconi University</a><br>

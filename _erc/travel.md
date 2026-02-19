@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "OPTiMiSE — Funded Travel & Conferences"
-permalink: /erc/travel/
+title: "OPTiMiSE — Talks & Presentations"
+permalink: /erc/talks/
 toc: false
 ---
 
-{% include erc_pi_activities.html %}
+{% include erc_talks.html %}

@@ -1,0 +1,94 @@
+<style>
+.erc-talks .abstract-toggle {
+  font-size: 0.875rem;
+  max-height: 0;
+  overflow: hidden;
+  text-align: justify;
+  transition: all 0.15s ease;
+  border: dashed 1px var(--global-bg-color);
+}
+.erc-talks .abstract-toggle.open {
+  max-height: 100em;
+  border-color: var(--global-text-color);
+}
+.erc-talks .abstract-toggle p {
+  line-height: 1.4em;
+  margin: 10px;
+}
+.erc-talks .links a.btn {
+  color: var(--global-text-color);
+  border: 1px solid var(--global-text-color);
+  padding: 0.25rem 1rem;
+  margin-left: 0;
+}
+.erc-talks .links a.btn:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+</style>
+
+{% assign talks = site.data.erc_talks %}
+{% if talks == nil or talks.size == 0 %}
+<p><em>No talks yet.</em></p>
+{% else %}
+{% assign sorted = talks | sort: "date" | reverse %}
+{% assign grouped = sorted | group_by_exp: "item", "item.date | date: '%Y'" %}
+
+<div class="erc-talks">
+{% for year_group in grouped %}
+<h3>{{ year_group.name }}</h3>
+<ul style="list-style: none; padding-left: 0;">
+{% for t in year_group.items %}
+  <li style="margin-bottom: 1rem;">
+    <div>
+      {%- if t.event_url -%}
+        <strong><a href="{{ t.event_url }}">{{ t.event }}</a></strong>
+      {%- else -%}
+        <strong>{{ t.event }}</strong>
+      {%- endif -%}
+      {%- if t.event_date %}, {{ t.event_date }}{% endif -%}
+      {%- if t.location %}, {{ t.location }}{% endif -%}
+      <br>
+      <em>{{ t.title }}</em>
+      {%- if t.speaker %} ({{ t.speaker }}){% endif -%}
+
+      {%- if t.abstract or t.abstract_url or t.slides or t.slides_url %}
+      <div class="links">
+        {%- if t.abstract %}
+          <a class="abstract btn btn-sm z-depth-0" role="button">Abstract</a>
+        {%- endif %}
+        {%- if t.abstract_url %}
+          <a href="{{ t.abstract_url }}" class="btn btn-sm z-depth-0" role="button">Abstract</a>
+        {%- endif %}
+        {%- if t.slides %}
+          <a href="{{ t.slides | prepend: '/assets/pdf/erc/' | relative_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        {%- endif %}
+        {%- if t.slides_url %}
+          <a href="{{ t.slides_url }}" class="btn btn-sm z-depth-0" role="button">Slides</a>
+        {%- endif %}
+      </div>
+      {%- endif %}
+
+      {%- if t.abstract %}
+      <div class="abstract-toggle">
+        <p>{{ t.abstract }}</p>
+      </div>
+      {%- endif %}
+    </div>
+  </li>
+{% endfor %}
+</ul>
+{% endfor %}
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelectorAll('.erc-talks a.abstract').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var entry = this.closest('li');
+      entry.querySelector('.abstract-toggle').classList.toggle('open');
+    });
+  });
+});
+</script>
+{% endif %}

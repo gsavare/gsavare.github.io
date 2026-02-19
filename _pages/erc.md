@@ -4,6 +4,7 @@ main_title: # OPTiMiSE
 title: erc project
 permalink: /erc/
 nav: true
+nav_order: 2
 dropdown: true
 children:
     - title: positions
@@ -12,6 +13,8 @@ children:
       permalink: /erc/team/
     - title: activities
       permalink: /erc/activities/
+    - title: talks
+      permalink: /erc/talks/
     - title: publications
       permalink: /erc/publications/
 ---
@@ -56,6 +59,8 @@ The goal of the project is a wide-ranging analysis which aims to combine and bro
   <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a> — {% if p.event_date %}{{ p.event_date }}{% else %}{{ p.date | date: "%B %Y" }}{% endif %}{% if p.location %}, {{ p.location }}{% endif %}</li>
 {% endfor %}
 </ul>
+
+## [talks & presentations]({{ '/erc/talks/' | relative_url }})
 
 ## [publications]({{ '/erc/publications/' | relative_url }})
 

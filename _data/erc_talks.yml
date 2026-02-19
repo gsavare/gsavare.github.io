@@ -1,0 +1,70 @@
+# ERC OPTiMiSE — Talks & Presentations
+#
+# Talks and presentations by the PI and team members
+# at conferences, workshops, schools, and seminars.
+#
+# Fields:
+#   date:        Date of the talk (YYYY-MM-DD, required, used for sorting)
+#   event:       Name of the event (required)
+#   event_url:   URL of the event website (optional)
+#   event_date:  Human-readable event dates, e.g. "June 15–19, 2026" (optional)
+#   location:    City, Country (optional)
+#   type:        conference | workshop | school | seminar
+#   speaker:     Speaker name — omit if PI (Savaré) (optional)
+#   title:       Title of the talk (required)
+#   abstract:    Abstract text, shown as collapsible toggle (optional)
+#   abstract_url: URL to external abstract page (optional, alternative to abstract)
+#   slides:      Filename in assets/pdf/erc/ (optional)
+#   slides_url:  External URL for slides (optional, alternative to slides)
+#
+# Example:
+# - date: 2026-06-15
+#   event: "Some Conference 2026"
+#   event_url: "https://example.com/conf2026"
+#   event_date: "June 15–19, 2026"
+#   location: "City, Country"
+#   type: conference
+#   speaker: "Collaborator Name"
+#   title: "Title of the talk"
+#   abstract: |
+#     Abstract text goes here...
+#   slides: "collaborator-conf2026.pdf"
+
+# Add entries below this line:
+
+- date: 2026-02-17
+  event: "Recent Advances in PDEs and Geometric Analysis"
+  event_url: "https://www.mate.polimi.it/events/RAPGA26/"
+  event_date: "February 17–18, 2026"
+  location: "Politecnico di Milano"
+  type: workshop
+  title: "Variational Convergence of Metric Gradient Flows"
+  abstract: >
+    In this talk we address variational convergence and stability properties
+    of gradient flows in metric spaces. We begin by introducing the notion
+    of metric gradient flow in the sense of Evolution Variational Inequalities
+    (EVI), which provides a robust and intrinsic characterization of
+    dissipative evolutions beyond the Hilbertian setting.
+    Given a sequence of functionals \((\phi_h)\) defined on a metric space
+    and generating corresponding gradient flows, we study the problem of
+    understanding when and how the associated evolutions converge as the
+    functionals vary. In the classical Hilbert space framework, convergence
+    of gradient flows is closely related to Mosco (i.e.
+    \(\Gamma\)-convergence with respect to the strong and weak topology)
+    of convex energies and to the convergence of resolvent operators.
+    In a general metric setting, however, several key tools are missing:
+    resolvents may fail to be well defined or contractive, compactness is
+    often unavailable, and no natural weak topology is present.
+    We present a variational approach to stability that avoids strong
+    coercivity assumptions and relies instead on quantitative error estimates
+    for minimizing movement schemes and their Ekeland relaxations. These
+    estimates provide a robust bridge between discrete variational
+    approximations and continuous EVI flows, and allow one to transfer
+    convergence properties from the energies to the evolutions under
+    suitable variational assumptions.
+    The results apply to a broad class of metric spaces admitting EVI
+    gradient flows and yield general convergence criteria that extend
+    classical Hilbert space results to genuinely metric frameworks, with
+    applications for instance to Wasserstein and RCD spaces.
+    <br><em>Joint work with Matteo Muratori.</em>
+  slides: "Milano2026.pdf"
