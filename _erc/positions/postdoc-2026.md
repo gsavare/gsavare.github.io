@@ -4,7 +4,7 @@ title: "Postdoctoral Position in Analysis"
 date: 2026-02-14
 deadline: 2026-03-15
 position_type: postdoc
-status: open
+status: closed
 duration: "24 months (renewable)"
 start_date: "June 1, 2026 (flexible)"
 category: positions

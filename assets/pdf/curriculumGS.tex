@@ -25,15 +25,7 @@ doi={false}
   \setlength{\parskip}{0pt}
   \setlength{\itemsep}{0pt plus 0.3ex}}
 \setlength{\parindent}{0pt}
-%\usepackage{showkeys}
-%\usepackage{eulervm}
-% \usepackage{mathpazo} 
-% \usepackage[scaled=.95]{helvet} 
-% \usepackage{courier}
-%\usepackage{times}
 
-%\usepackage[backend=bibtex,style=alphabetic]{biblatex}
-%\bibliography{bibliografia2014}
 
 \newenvironment{myquote}{\list{}{\leftmargin=0.25in\rightmargin=0.25in}\item[]}{\endlist}
 %\renewcommand\thesection{\Alph{section}}
@@ -95,15 +87,9 @@ doi={false}
 \newcommand{\myskip}{\smallskip\noindent}
 
 \newcommand{\workshop}[4]{#1, #2, #3, {\em #4}}
-%\newcommand{\workshop}[5]{#1, #2, #3}  %short version
-
-% \item MFO workshop: \href{https://www.mfo.de/occasion/2244/www_view}{\emph{Heat Kernels, Stochastic Processes and Functional Inequalities}}, Oberwolfach, 2022
 
 
 %\bibliography{bibliografia2014.bib}
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%                                                        %  Preamble for ERC
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \usepackage{fancyhdr}
 
 %\rhead{Curriculum}
@@ -235,8 +221,14 @@ includehead, includefoot,headsep=12pt]{geometry}
 \usepackage[colorlinks,linkcolor=blue,citecolor=blue,urlcolor=blue]{hyperref}
 \newcommand{\plambda}{$\lambda$--}
  
-\input macro2014
-\input macro_metric2014
+%%% Macros (inlined from macro2014.tex and macro_metric2014.tex)
+\newcommand{\V}{\mathbb{V}}
+\newcommand{\cE}{{\ensuremath{\mathcal E}}}
+\newcommand{\sfS}{{\sf S}}
+\newcommand{\sfW}{{\sf W}}
+\newcommand{\sfd}{{\sf d}}
+\newcommand{\Cheeger}{\mathsf{Ch}}
+\newcommand{\Ch}{\Cheeger}
 %
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -651,8 +643,13 @@ Several invited courses to \emph{international advanced schools}
 
 
 \mysec*{ORGANISATION OF SCIENTIFIC MEETINGS}
-2026: Intensive school \href{https://sites.google.com/unitn.it/mfml-2026/home}{\emph{Mathematical Foundations of Machine Learning (MFML 2026)}}, 
-%May 25-29, 
+2026: MFO Workshop
+\href{https://www.mfo.de/www/activity/2613}{\emph{Flows on Measure Spaces and Applications in Machine Learning}},
+Oberwolfach
+{\small (Co-organizers: P.~Rigollet, G.~Steidl, F.-X.~Vialard)}
+
+2026: Intensive school \href{https://sites.google.com/unitn.it/mfml-2026/home}{\emph{Mathematical Foundations of Machine Learning (MFML 2026)}},
+%May 25-29,
 Vason (Monte Bondone), Trento.
 
 2025: International School 
@@ -752,7 +749,7 @@ Banff {\small (Co-organizer: U. Stefanelli)}
 
 
 \mysec*{INSTITUTIONAL RESPONSIBILITIES}
-
+2026--\present: Head, Department of Decision Sciences, Bocconi University\\
 \pind
 2019: Director of the \emph{Advanced School of Ph.D.~Higher Education}
 (SAFD), University of Pavia\\
@@ -762,7 +759,7 @@ Banff {\small (Co-organizer: U. Stefanelli)}
 2001--2008: Director of the \emph{Ph.D.~program in Mathematics and
   Statistics}, University of Pavia\\
 \npind
-1998--present: IMATI-CNR, research associate
+1998--\present: IMATI-CNR, research associate
 
 
 
@@ -806,7 +803,7 @@ the \emph{editorial board}\\
 %   C.I.M.E.}{Scientific Advisory Board, C.I.M.E.~foundation, Firenze, Italy.}
 
 % \npind
-% 2014--present:
+% 2014--\present:
 % \switch{Membro del Nucleo di Valutazione,}{University Assessment Commission,}
 % University of Pavia.
 
@@ -898,7 +895,7 @@ the \emph{editorial board}\\
 % \mysec*{EDITORIAL BOARDS}
 
 % \npind
-% 2013--present: Potential Analysis.
+% 2013--\present: Potential Analysis.
 
 % \mysec*{RESEARCH PROJECTS}
 
@@ -990,7 +987,8 @@ with 15000+ citations, H-index 49 according to
 \href{https://doi.org/10.1007/s00222-013-0456-1}{\emph{Calculus and heat flow in metric measure spaces and applications to
   spaces with {R}icci bounds from below}} (with L.~Ambrosio, N.~Gigli).
 \newblock {Invent. Math.} 195 (2014), 289--391. %Cit.~202
-(\footnotemark[1]{})\\
+%(\footnotemark[1]{})
+\\
 {\small\textsf{Heat flow and Cheeger energy
 in metric--measure spaces: $L^2$ and Optimal Transport theory}}
 
@@ -1003,7 +1001,8 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
   (with L.~Ambrosio, N.~Gigli).
 \newblock {Duke Math. J.}, 163
 (2014):1405--1490. %Cit.~238 
-(\footnotemark[1]{}).\\
+%(\footnotemark[1]{}).
+\\
 {\small\textsf{The first analysis and characterization
   of Riemannian RCD(K,$\infty$) spaces with quadratic Cheeger energy}}
 
@@ -1014,7 +1013,8 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
 (with L.~Ambrosio, N.~Gigli).
 \newblock {Annals of Probability},  43 
 (2015): 339--404.  %Cit.~122 
-(\footnotemark[1]{})\\
+%(\footnotemark[1]{})
+\\
 {\small\textsf{The full identification between the Bakry-\'Emery
   condition and RCD(K,$\infty$) spaces}}
 
@@ -1023,7 +1023,8 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
     Wasserstein contraction of the heat flow in RCD$(K,\infty)$ metric
     measure spaces}}
 \newblock{Discrete Contin. Dyn. Syst.} 34 (2014): 1641–1661. %Cit.~70
-(\footnotemark[1]{})\\
+%(\footnotemark[1]{})
+\\
 {\small\textsf{Second order calculus, measure-valued $\Gamma_2$-tensor, and
     improved
     Bakry-\'Emery
@@ -1034,7 +1035,7 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
   stability of Ricci curvature bounds and heat flows}
 (with N.~Gigli, A.~Mondino)
 \newblock {Proc. Lond. Math. Soc.} 111 (2015): 1071–1129. %Cit.~83
-(\footnotemark[1]{})
+%(\footnotemark[1]{})
 
   \item%
 \href{https://doi.org/10.1090/memo/1270}{\emph{Nonlinear diffusion equations and curvature conditions
@@ -1065,7 +1066,7 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
     gradients in metric measure spaces}}
   (with L.~Ambrosio, N.~Gigli)
   \newblock {Rev. Mat. Iberoam.} 29 (2013): 969--996. %Cit.~96 
-  (\footnotemark[1]{})
+  %(\footnotemark[1]{})
 \end{itemize}
 \item
   \textbf{Entropy-Transport formulation for unbalanced optimal
@@ -1085,7 +1086,7 @@ in metric--measure spaces: $L^2$ and Optimal Transport theory}}
     Hellinger-Kantorovich distance between positive measures}}
   (with M.~Liero, A.~Mielke).
   \newblock{Invent. Math.} 211 (2018): 969--1117. %Cit.~34 
-  (\footnotemark[1]{})
+  %(\footnotemark[1]{})
 \end{itemize}
 
   \item \textbf{Foundation of Balanced Viscosity and Visco-Energetic solutions
@@ -1187,7 +1188,7 @@ in infinite dimension.}}
 %     properties of metric Sobolev spaces and capacity.}
 % \end{smallquote}
 
-\footnotetext[1]{\emph{A Highly cited paper according to WOS}}
+%\footnotetext[1]{\emph{A Highly cited paper according to WOS}}
 
 %\newpage
 
@@ -1231,7 +1232,9 @@ Computational electrocardiology: mathematical and numerical modeling}
 \newcommand{\noemph}[1]{#1}
 \begin{itemize}[topsep=-0.5\parsep,itemsep=-4pt,leftmargin=*] 
   \renewcommand{\labelitemi}{--}
-  \item CIRM Workshop: 
+  \item mSPACE Kickoff Meeting:
+  \href{https://bidsa.unibocconi.eu/multiscale-stochastics-patterns-and-analysis-combinatorial-environments}{\em Multiscale Stochastics, Patterns, and Analysis of Combinatorial Environments}, Bocconi University, Milano, 2026
+  \item CIRM Workshop:
   \href{https://conferences.cirm-math.fr/3049.html}{\em Aggregation-Diffusion Equations \&\ Collective Behavior:
 Analysis, Numerics and Applications}, Marseille, 2024
 \item 
@@ -1336,7 +1339,12 @@ Oberwolfach, 2012.
 \begin{itemize}[topsep=-0.5\parsep,itemsep=-4pt,leftmargin=*] 
   \renewcommand{\labelitemi}{--}
 
-\item CIME course on 
+\item Spring School
+\href{https://www.uni-ulm.de/mawi/iaa/forschung/spring-school-2026-horizons-in-nonlinear-pdes/}{\emph{Horizons in Nonlinear PDEs}},
+  Universit\"at Ulm, Germany, 2026:
+  Variational Principles for Evolution Problems
+
+\item CIME course on
 \href{https://link.springer.com/book/10.1007/978-3-030-84141-6}{\emph{New Trends on Analysis and Geometry in
     Metric Spaces}},
   Levico Terme, Italy 2017:

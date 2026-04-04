@@ -68,3 +68,45 @@
     applications for instance to Wasserstein and RCD spaces.
     <br><em>Joint work with Matteo Muratori.</em>
   slides: "Milano2026.pdf"
+
+- date: 2026-03-09
+  event: "Horizons in Nonlinear PDEs — Spring School 2026"
+  event_url: "https://www.uni-ulm.de/mawi/iaa/forschung/spring-school-2026-horizons-in-nonlinear-pdes/"
+  event_date: "March 9–13, 2026"
+  location: "Universität Ulm, Germany"
+  type: school
+  title: "Variational Principles for Evolution Problems"
+  abstract: >
+    The course provides an introduction to variational methods for evolution
+    equations in Hilbert and metric spaces. After reviewing the main generation
+    results for gradient flows and contraction semigroups, we will discuss and
+    apply the abstract theory to the paradigmatic example of the
+    Derrida-Lebowitz-Speer-Spohn (DLSS) equation.
+
+- date: 2026-03-16
+  event: "Multiscale Stochastics, Patterns, and Analysis of Combinatorial Environments (mSPACE Kickoff Meeting)"
+  event_url: "https://bidsa.unibocconi.eu/multiscale-stochastics-patterns-and-analysis-combinatorial-environments"
+  event_date: "March 16–19, 2026"
+  location: "Bocconi University, Milano"
+  type: workshop
+  title: "The De Giorgi Variational Principle for Gradient Flows: A Direct Approach"
+  abstract: >
+    De Giorgi's variational principle provides a global-in-time characterization
+    of gradient flows of a functional \(\phi\) as curves minimizing an
+    energy-dissipation functional. While the existence of minimizers is
+    relatively easy to establish, the original formulation does not immediately
+    imply that the minimum value coincides with the initial energy
+    \(\phi(x_0)\). This identification is crucial, since only minimizers
+    attaining this value correspond to genuine solutions of the gradient flow.
+    We present a direct variational approach showing how to prove that the
+    minimum equals \(\phi(x_0)\), without relying on time-discretization or
+    iterative constructions such as the minimizing movements scheme. The key
+    idea is to replace iterative arguments with a global method based on
+    relaxation, convexification, and duality, allowing one to identify the
+    value of the minimum directly at the continuous level.
+    Although the presentation focuses on the simplest case of gradient flows
+    in Hilbert spaces, the same strategy extends to more general frameworks,
+    including doubly nonlinear equations in reflexive Banach spaces, metric
+    gradient flows, and time-dependent energies.
+    <br><em>Joint work with Alessandro Pinzi and Filippo Riva.</em>
+  slides: "mSPACE2026.pdf"

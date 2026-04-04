@@ -4,7 +4,6 @@ title: ERC Postdoc Position Available
 date: 2026-02-14
 inline: true
 related_posts: false
-published: false
 ---
 
 <a href="/erc/positions/postdoc-2026/"><b>Postdoctoral position</b></a> in Analysis at Bocconi University, funded by ERC project OPTiMiSE.<br>
