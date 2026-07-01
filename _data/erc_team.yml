@@ -4,10 +4,11 @@
 #   pi       — Principal Investigator
 #   initial  — Collaborators declared from the start of the project
 #   added    — Collaborators added over time
-#   hired    — People hired with project funds (postdocs, PhD students)
+#   postdoc  — Post-docs activated with project funds
+#   hired    — People hired with project funds (PhD students, etc.)
 #
 # Fields:
-#   name, role, category, institution, url, start_date, end_date, visits
+#   name, role, category, institution, url, since, start_date, end_date, visits
 
 - name: "Benoît Bonnet Weill"
   category: initial
@@ -64,3 +65,10 @@
 - name: "Giacomo Sodini"
   category: initial
   url: "https://giacomosodini.github.io"
+
+# --- Post-docs (hired with project funds) ---
+
+- name: "Fanch Coudreuse"
+  category: postdoc
+  url: "https://cvgmt.sns.it/person/5933/"
+  since: "September 1, 2026"

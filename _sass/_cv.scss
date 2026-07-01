@@ -60,7 +60,7 @@ i.icondepartment {
 }
 
 table.institution {
-  margin-bottom: 1rem;
+  margin-bottom: 0.3rem;
 }
 
 td.department {
@@ -157,13 +157,13 @@ a.anchor {
 }
 
 ul.timeline {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 ul.timeline li {
   position: relative;
-  min-height: 2.2rem;
+  min-height: 1.8rem;
   color: var(--global-text-color);
   list-style-position: inside;
 }
@@ -180,7 +180,7 @@ span.badge-toc {
 
 ul.timeline li::before {
   content: "";
-  min-height: 2.5rem;
+  min-height: 2rem;
   width: 1px;
   background: var(--global-text-color);
   margin: 0;
@@ -213,3 +213,66 @@ ul.timeline li::before {
      color: var(--global-text-color);
 }
 */
+
+/*****************************
+ * Compact CV layout
+ *****************************/
+
+.cv {
+  font-size: 0.8rem;
+
+  // Tighter section cards (override Bootstrap mt-3 / p-3 utilities)
+  .card.mt-3 {
+    margin-top: 0.6rem !important;
+  }
+  .card.p-3 {
+    padding: 0.6rem 0.85rem !important;
+  }
+
+  h3.card-title {
+    font-size: 1.15rem;
+    margin-bottom: 0.4rem;
+  }
+
+  // Tighter rows inside each section
+  .list-group-item {
+    padding-top: 0.35rem;
+    padding-bottom: 0.35rem;
+  }
+
+  h6.title {
+    font-size: 0.85rem;
+    margin-bottom: 0.15rem;
+  }
+
+  // nested_list titles (e.g. "Recent academic interests"): normal, not oversized italic
+  h5.font-italic {
+    font-style: normal !important;
+    font-size: 0.85rem;
+    font-weight: 400;
+    margin-bottom: 0.15rem;
+  }
+
+  ul.items {
+    margin-bottom: 0.2rem;
+  }
+
+  .container-links {
+    margin-top: 0.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  // Smaller link buttons, matching the compact talks/publications style
+  a.btncv {
+    padding: 0.08rem 0.55rem;
+    line-height: 1.4;
+  }
+}
+
+// Compact table-of-contents badges
+h4 + ul.timeline {
+  margin-top: 0.6rem;
+}
+span.badge-toc {
+  padding: 0.1rem 0.45rem;
+}

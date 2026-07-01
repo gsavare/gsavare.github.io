@@ -81,6 +81,10 @@
 - title: Institutional responsibilities
   type: time_table
   contents:
+    - title: Head of the Department of Decision Sciences
+      institution: Bocconi University
+      year: 2026 -
+
     - title: Director of the Advanced School of Ph.D. Higher Education (SAFD)
       institution: University of Pavia
       year: 2019
@@ -110,11 +114,11 @@
 
     - title: C.I.M.E. Foundation
       description: member of the Scientific Advisory Board
-      year: 2014 -
+      year: 2014 - 2025
 
     - title: Applied Mathematics and Optimization
       description: member of the editorial board
-      year: 2016 -
+      year: 2016 - 2025
 
     - title: Potential Analysis
       description: member of the editorial board
@@ -123,8 +127,7 @@
 - title: Memberships of Scientific Societies
   type: time_table
   contents:
-    - title: Membro Corrispondente
-      institution: Istituto Lombardo, Accademia di Scienze e Lettere, Milano
+    - institution: Istituto Lombardo, Accademia di Scienze e Lettere, Milano
       year: 2009 -
 
 - title: Recent academic interests

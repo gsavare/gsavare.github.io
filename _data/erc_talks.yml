@@ -110,3 +110,91 @@
     gradient flows, and time-dependent energies.
     <br><em>Joint work with Alessandro Pinzi and Filippo Riva.</em>
   slides: "mSPACE2026.pdf"
+
+- date: 2026-05-07
+  event: "Distinguished Lecture 2026"
+  event_url: "https://www.durham.ac.uk/departments/academic/mathematical-sciences/news/distinguished-lecture-2026/"
+  event_date: "May 7, 2026"
+  location: "Durham University, UK"
+  type: seminar
+  title: "Diffusion, Optimal Transport and Ricci Curvature"
+  abstract: >
+    The interplay between diffusion, optimal transport and Ricci curvature has
+    been an active theme at the interface of analysis, geometry and probability
+    over the last two decades. On the analytic side, Bakry–Émery’s
+    \(\Gamma\)-calculus characterises lower Ricci curvature bounds through
+    gradient estimates for the heat semigroup, within the framework of Dirichlet
+    forms. On the geometric side, the work of Lott, Sturm and Villani shows that
+    the same curvature information is encoded in the displacement convexity of
+    the relative entropy along Wasserstein geodesics, leading to a synthetic
+    notion of Ricci curvature that makes sense on general metric measure spaces.
+    <br><br>
+    The two viewpoints meet on the class of RCD spaces, developed in a series of
+    papers with L. Ambrosio and N. Gigli. On such spaces the heat flow is
+    linear — equivalently, the Cheeger energy is quadratic — and admits a double
+    description as the \(L^2\)-gradient flow of the Dirichlet energy and as the
+    Wasserstein EVI flow of the entropy. Together with stability under measured
+    Gromov–Hausdorff convergence, this allows RCD spaces to inherit many of the
+    structural properties and calculus tools available on smooth Riemannian
+    manifolds.
+    <br><br>
+    The lecture will present the main ideas behind this circle of results and
+    will close with some recent developments along related directions: gradient
+    flows for convex functionals on RCD spaces, Hellinger–Kantorovich
+    contractions, and metric Sobolev structures on spaces of random measures.
+
+- date: 2026-05-22
+  event: "UMI — Incontro Scientifico di Maggio"
+  event_url: "https://umi.dm.unibo.it/incontri-scientifici-2025-27/bologna-maggio-2026/"
+  event_date: "May 22, 2026"
+  location: "University of Bologna"
+  type: seminar
+  title: "Strutture variazionali nei problemi di evoluzione"
+  abstract: >
+    Molti problemi di evoluzione sono formulati come equazioni differenziali
+    che descrivono localmente la dinamica nel tempo. In casi significativi, la
+    stessa dinamica ammette anche una formulazione variazionale, fondata su
+    principi globali che mettono in relazione energia, dissipazione e
+    ottimalità delle traiettorie. Questo cambio di prospettiva permette di
+    cogliere aspetti strutturali comuni a problemi molto diversi, e si rivela
+    particolarmente efficace nello studio della stabilità, dell’approssimazione
+    e dei passaggi al limite. La conferenza si propone di presentare alcune di
+    queste idee a un livello introduttivo, con un cenno finale a sviluppi più
+    recenti in contesti metrici e probabilistici, in cui l’evoluzione di misure
+    svolge un ruolo centrale.
+
+- date: 2026-06-10
+  event: "5th Italian Meeting on Probability and Mathematical Statistics (IMPMS 2026)"
+  event_url: "https://probabilitypalermo2026.unipa.it/"
+  event_date: "June 8–12, 2026"
+  location: "University of Palermo"
+  type: conference
+  plenary: true
+  title: "From the Monge–Kantorovich problem to optimal transport for random measures"
+  abstract: >
+    The Monge–Kantorovich problem, originally posed as the optimal rearrangement
+    of a mass distribution and later relaxed by Kantorovich into a problem of
+    optimal coupling between two probability measures, has grown over the last
+    decades into a rich theory that provides a natural geometric language for
+    probability measures. I will first recall the main ideas of optimal
+    transport and the geometry of the Wasserstein space, working throughout in
+    the \(L^2\) setting, with emphasis on couplings and the role of convex
+    functions.
+    <br><br>
+    I will then turn to optimal transport for random measures, namely the laws
+    of random variables taking values in a space of probability measures. The
+    theory exhibits striking analogies with the Euclidean case and highlights,
+    on the one hand, the role of random measures admitting a Gaussian lift in
+    the space of maps, and, on the other, the role of the distinguished class of
+    totally convex functions. This offers a new perspective on differential
+    tools already developed in classical optimal transport. I will illustrate
+    this picture through a few examples and comment on some of the questions and
+    perspectives it raises.
+
+- date: 2026-06-22
+  event: "Graduate School in Analysis and Applications"
+  event_url: "https://www.esi.ac.at/events/e609/"
+  event_date: "June 22–26, 2026"
+  location: "ESI, Vienna"
+  type: school
+  title: "4 Lectures on Variational methods for evolution"

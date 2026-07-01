@@ -561,6 +561,27 @@ footer.sticky-bottom {
 
 // Publications
 
+// Compact variant used on the dedicated publications pages
+// (main /publications/ and /erc/publications/). Mirrors the compact
+// talks layout: smaller text, tighter spacing, smaller buttons.
+.publications.compact-pubs {
+  font-size: 0.85rem;
+
+  ol.bibliography li {
+    margin-bottom: 0.6rem;
+    line-height: 1.3;
+
+    .links a.btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0.16rem 0.45rem 0.05rem;
+      font-size: 0.68rem;
+      line-height: 1;
+    }
+  }
+}
+
 .publications {
   margin-top: 2rem;
 

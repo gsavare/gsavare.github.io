@@ -1,4 +1,20 @@
 <style>
+.erc-talks {
+  font-size: 0.85rem;
+  line-height: 1.3;
+}
+.erc-talks h3 {
+  font-size: 1.1rem;
+  margin-top: 1.1rem;
+  margin-bottom: 0.4rem;
+}
+.erc-talks li {
+  margin-bottom: 0.6rem !important;
+}
+.erc-talks .links {
+  margin-top: 0.05rem;
+  margin-bottom: 0;
+}
 .erc-talks .abstract-toggle {
   font-size: 0.875rem;
   max-height: 0;
@@ -18,7 +34,12 @@
 .erc-talks .links a.btn {
   color: var(--global-text-color);
   border: 1px solid var(--global-text-color);
-  padding: 0.25rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.16rem 0.45rem 0.05rem;
+  font-size: 0.68rem;
+  line-height: 1;
   margin-left: 0;
 }
 .erc-talks .links a.btn:hover {
@@ -46,11 +67,12 @@
       {%- else -%}
         <strong>{{ t.event }}</strong>
       {%- endif -%}
-      {%- if t.event_date %}, {{ t.event_date }}{% endif -%}
       {%- if t.location %}, {{ t.location }}{% endif -%}
+      {%- if t.event_date %}<br>{{ t.event_date }}{% endif -%}
       <br>
       <em>{{ t.title }}</em>
       {%- if t.speaker %} ({{ t.speaker }}){% endif -%}
+      {%- if t.plenary %} — Plenary talk{% endif -%}
 
       {%- if t.abstract or t.abstract_url or t.slides or t.slides_url %}
       <div class="links">
